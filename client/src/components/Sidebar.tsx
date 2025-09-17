@@ -4,28 +4,26 @@ function Sidebar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="h-screen">
-      {/* Burger button for mobile */}
-      <div className="lg:hidden p-2">
-        <button
-          className="btn btn-square btn-ghost"
-          onClick={() => setOpen(!open)}
-          aria-label="Open sidebar"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
+    <div className="">
+      {/* Burger button for mobile - absolutely positioned top left */}
+      <button
+        className="btn btn-square btn-ghost fixed top-2 left-2 z-50 lg:hidden"
+        onClick={() => setOpen(!open)}
+        aria-label="Open sidebar"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
       {/* Sidebar */}
       <ul
         className={`
           menu bg-base-200 rounded-box w-80 h-screen
           fixed top-0 left-0 z-40 transition-transform duration-200
           ${open ? 'translate-x-0' : '-translate-x-full'}
-          lg:translate-x-0 lg:relative lg:top-0 lg:left-0
+          lg:translate-x-0 lg:fixed lg:top-0 lg:left-0
           ${open ? '' : 'lg:block'}
         `}
         style={{ maxWidth: '20rem' }}
