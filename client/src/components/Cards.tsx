@@ -14,9 +14,9 @@ type Listing = {
 
 function Cards({ listings }: { listings: Listing[] }) {
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  w-full">
+    <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-4  w-full">
       {listings.map(listing => (
-        <div key={listing.id} className="card bg-base-100 min-w-full max-w-xs sm:min-w-full shadow-sm">
+        <div key={listing.id} className="card bg-base-100 min-w-full max-w-xs sm:min-w-full border-1 border-gray-300">
           <figure>
             <img
               src={listing.image}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Cards from '../components/Cards'
+import Map from '../components/Map'
 
 const listings = [
   {
@@ -67,15 +68,15 @@ const listings = [
 
 function Home() {
   return (
-    <div className='m-4 flex gap-4'>
-      <Sidebar/>
-      <div className='flex-1 justify-center items-center'>
-        <Cards listings={listings}/>
+    <div className="m-4 grid grid-cols-3 grid-rows-5 gap-4 h-[calc(100vh-2rem)]">
+      <div className="row-span-5 col-start-1 col-span-2 row-start-1 h-full rounded-b-full">
+        <Map />
       </div>
-
+      <div className="col-span-3 row-span-5 col-start-3 row-start-1 h-full overflow-y-auto">
+        <Cards listings={listings} />
+      </div>
     </div>
   )
 }
-
 export default Home
 
