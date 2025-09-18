@@ -68,12 +68,13 @@ const listings = [
 
 function Home() {
   return (
-    <div className="m-4 grid grid-cols-3 grid-rows-5 gap-4 h-[calc(100vh-2rem)]">
-      <div className="row-span-5 col-start-1 col-span-2 row-start-1 h-full rounded-b-full">
+    <div className="relative w-full h-screen flex">
+      <Sidebar />
+      <div className="flex-1 h-full w-full">
         <Map />
-      </div>
-      <div className="col-span-3 row-span-5 col-start-3 row-start-1 h-full overflow-y-auto">
-        <Cards listings={listings} />
+        <div className="absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 p-6">
+          <Cards listings={listings} />
+        </div>
       </div>
     </div>
   )

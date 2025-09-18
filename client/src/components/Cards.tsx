@@ -5,6 +5,8 @@ type Listing = {
   id: number;
   title: string;
   image: string;
+  image2?: string;
+  image3?: string;
   price: string;
   location: string;
   tags?: string[];
@@ -14,17 +16,37 @@ type Listing = {
 
 function Cards({ listings }: { listings: Listing[] }) {
   return (
-    <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-4  w-full">
+    <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-4 w-full">
       {listings.map(listing => (
-        <div key={listing.id} className="card bg-base-100 min-w-full max-w-xs sm:min-w-full border-1 border-gray-300">
-          <figure>
-            <img
-              src={listing.image}
-              alt={listing.title}
-              className="object-cover h-40 w-full"
-            />
-          </figure>
-          <div className="card-body">
+        <div key={listing.id} className="card bg-white min-w-full max-w-3xl sm:min-w-full border-1 border-gray-300">
+          {/* Custom image grid */}
+          <div className="grid grid-cols-3 grid-rows-2 gap-2 p-4">
+            {/* Main cover image: spans 2 cols and 2 rows */}
+            <div className="col-span-2 row-span-2">
+              <img
+                src={listing.image}
+                alt={listing.title}
+                className="object-cover w-full h-full rounded-xl min-h-[180px] max-h-[260px]"
+              />
+            </div>
+            {/* Top right image (placeholder or extra image) */}
+            <div className="col-start-3 row-start-1">
+              <img
+                src={listing.image2 || listing.image}
+                alt={listing.title + ' extra 1'}
+                className="object-cover w-full h-full rounded-xl min-h-[85px] max-h-[120px]"
+              />
+            </div>
+            {/* Bottom right image (placeholder or extra image) */}
+            <div className="col-start-3 row-start-2">
+              <img
+                src={listing.image3 || listing.image}
+                alt={listing.title + ' extra 2'}
+                className="object-cover w-full h-full rounded-xl min-h-[85px] max-h-[120px]"
+              />
+            </div>
+          </div>
+          <div className="card-body pt-2">
             <h2 className="card-title">
               {listing.title}
               {listing.isNew && <div className="badge badge-secondary">NEW</div>}
