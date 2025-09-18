@@ -7,11 +7,14 @@ interface MapProps {
   newLocation: [number,number]
   isIdle: boolean;
 }
+  
+mapboxgl.accessToken = 'pk.eyJ1Ijoid2VpcmRvcmFuZ2UiLCJhIjoiY21mbnU0bTUzMGp2czJrcXozczVvNThoZCJ9.xKGXMz-BhPC4zj_Nh7FqAQ'
 
 function Map({newLocation, isIdle}:MapProps) {
   const mapContainerRef = useRef(null)
   const mapRef = useRef(null)
   const isRotating = useRef(false)
+  const markerRef = useRef(null)
 
   const rotateCamera = useCallback((timestamp:number) => {
       if (mapRef.current && isRotating.current) {
@@ -44,7 +47,6 @@ function Map({newLocation, isIdle}:MapProps) {
   }
   
   useEffect(() => {
-    mapboxgl.accessToken = 'pk.eyJ1Ijoid2VpcmRvcmFuZ2UiLCJhIjoiY21mbnU0bTUzMGp2czJrcXozczVvNThoZCJ9.xKGXMz-BhPC4zj_Nh7FqAQ'
     if (mapContainerRef.current || !mapRef) {
       mapRef.current = new mapboxgl.Map({
         container: mapContainerRef.current,
@@ -52,17 +54,42 @@ function Map({newLocation, isIdle}:MapProps) {
         zoom: 16.00,
         pitch: 60
       });
+
+      markerRef.current = new mapboxgl.Marker({
+        color: '#6353ee', 
+        scale: 1.5, // Larger marker
+      })
+      .setLngLat(newLocation)
+      .addTo(mapRef.current);
+    }
+
+    return () => {
+      if (markerRef.current) {
+        markerRef.current.remove()
+      }
     }
   },[]);
 
     useEffect(() => {
     if (mapRef.current) {
       console.log('Updating map center to:', newLocation);
+      // Update marker position
+      if (markerRef.current) {
+        markerRef.current.setLngLat(newLocation);
+      } else {
+        markerRef.current = new mapboxgl.Marker({
+          color: '#6353ee',
+          scale: 1.5,
+        })
+          .setLngLat(newLocation)
+          .addTo(mapRef.current);
+      }
+      
       mapRef.current.flyTo({
         center: newLocation,
         zoom: 16.80,
         pitch: 60,
-        essential: true, // Smooth animation
+        essential: true,
       });
     } else {
       console.log('Map instance not initialized');

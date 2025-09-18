@@ -14,11 +14,16 @@ type Listing = {
   description?: string;
 };
 
-function Cards({ listings }: { listings: Listing[] }) {
+interface CardsProp{
+  listings: Listing[],
+  onCardClick: (newLocation: [number, number]) => void;
+}
+
+function Cards({listings,onCardClick}: CardsProp ) {
   return (
     <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-4 w-full">
       {listings.map(listing => (
-        <div key={listing.id} className="card bg-white min-w-full max-w-3xl sm:min-w-full border-1 border-gray-300">
+        <div key={listing.id} className="card bg-white min-w-full max-w-3xl sm:min-w-full border-1 border-gray-300" onClick={() => onCardClick(listing.coords)}>
           {/* Custom image grid */}
           <div className="grid grid-cols-3 grid-rows-2 gap-2 p-4">
             {/* Main cover image: spans 2 cols and 2 rows */}

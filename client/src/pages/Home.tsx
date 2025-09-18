@@ -16,7 +16,7 @@ const listings = [
     tags: ['4 Bed', '3 Bath', 'Garage'],
     isNew: true,
     description: 'Spacious modern home with open plan living and large backyard.',
-    coords: [101.70056556641042,3.055193146388439],
+    coords: [101.7001903848135,3.055492032127826], 
   },
   {
     id: 1,
@@ -77,7 +77,8 @@ const listings = [
 
 
 const Home = () => {
-  const [newLocation,setnewLocation] = useState<[number,number]>([101.7006, 3.0550]); //currently set on default APU, later should be set first recommended location
+  const [newLocation,setnewLocation] = useState<[number,number]>([101.7001903848135,3.055492032127826]); //currently set on default APU, later should be set first recommended location
+  const [activeCard, setActiveCard] = useState<number>(0)
   const [isIdle, setIsIdle] = useState<boolean>(false);
   const idleTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
 
@@ -120,12 +121,12 @@ const Home = () => {
   }
 
   return (
-    <div className="m-4 grid grid-cols-3 grid-rows-5 gap-4 h-[calc(100vh-2rem)]">
-      <div className="row-span-5 col-start-1 col-span-2 row-start-1 h-full rounded-b-full">
+    <div className="relative w-full h-screen flex">
+      <div className="flex-1 h-full w-full">
         <Map newLocation={newLocation} isIdle={isIdle} />
-      </div>
-      <div className="col-span-3 row-span-5 col-start-3 row-start-1 h-full overflow-y-auto">
-        <Cards listings={listings} onCardClick={handleClick} />
+        <div className="absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 p-6">
+          <Cards listings={listings} onCardClick={handleClick} />
+        </div>
       </div>
     </div>
   )
