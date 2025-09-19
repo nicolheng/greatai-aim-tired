@@ -7,7 +7,7 @@ interface MapProps {
   newLocation: [number,number]
   isIdle: boolean;
 }
-  
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2VpcmRvcmFuZ2UiLCJhIjoiY21mbnU0bTUzMGp2czJrcXozczVvNThoZCJ9.xKGXMz-BhPC4zj_Nh7FqAQ'
 
 function Map({newLocation, isIdle}:MapProps) {
