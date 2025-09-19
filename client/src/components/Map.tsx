@@ -100,7 +100,7 @@ function Map({newLocation, isIdle}:MapProps) {
   return (
     <div
       ref={mapContainerRef}
-      className="absolute inset-0 w-full h-full bg-gray-200"
+      className="inset-0 w-[100vw] h-[100vh] bg-gray-200"
     />
   )
 }

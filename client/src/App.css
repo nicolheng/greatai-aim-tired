@@ -3,3 +3,17 @@
  @plugin "daisyui" {
     themes: all;
  }
+
+@keyframes fadein-moveleft {
+   from {
+      opacity: 0;
+      transform: translateX(-40px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+.animate-fadein {
+   animation: fadein-moveleft 0.5s cubic-bezier(0.4,0,0.2,1);
+}
