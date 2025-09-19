@@ -122,6 +122,7 @@ const Home = () => {
 
   return (
     <div className="relative w-full h-screen flex">
+      <Sidebar />
       <div className="flex-1 h-full w-full">
         <Map newLocation={newLocation} isIdle={isIdle} />
         <div className="absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 p-6">
