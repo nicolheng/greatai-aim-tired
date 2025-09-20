@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useState , useEffect } from 'react'
 import Sidebar from '../components/Sidebar'
 import Cards from '../components/Cards'
 import Map from '../components/Map'
@@ -67,13 +67,58 @@ const listings = [
 ]
 
 function Home() {
+  const [newLocation,setnewLocation] = useState<[number,number] | undefined>(); //currently set on default APU, later should be set first recommended location
+  const [isIdle, setIsIdle] = useState<boolean>(false);
+  const idleTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  // Idle detection
+  const IDLE_TIMEOUT = 5000; // 5 seconds
+
+  const resetIdleTimer = useCallback(() => {
+    console.log('User activity detected, resetting idle timer');
+    setIsIdle(false);
+    if (idleTimeoutRef.current) {
+      clearTimeout(idleTimeoutRef.current);
+    }
+    idleTimeoutRef.current = setTimeout(() => {
+      console.log('User is idle');
+      setIsIdle(true);
+    }, IDLE_TIMEOUT);
+  }, []);
+
+  useEffect(() => {
+    const events = ['click', 'touchstart'];
+    events.forEach((event) => {
+      window.addEventListener(event, resetIdleTimer);
+    });
+
+    resetIdleTimer(); // Start timer on mount
+
+    return () => {
+      events.forEach((event) => {
+        window.removeEventListener(event, resetIdleTimer);
+      });
+      if (idleTimeoutRef.current) {
+        clearTimeout(idleTimeoutRef.current);
+      }
+    };
+  }, [resetIdleTimer]);
+
+  const handleClick = (newLocation:[number,number]) => {
+    console.log("Button clicked",newLocation)
+    setnewLocation(newLocation);
+  }
+
+
+
   return (
-    <div className="m-4 grid grid-cols-3 grid-rows-5 gap-4 h-[calc(100vh-2rem)]">
-      <div className="row-span-5 col-start-1 col-span-2 row-start-1 h-full rounded-b-full">
-        <Map />
-      </div>
-      <div className="col-span-3 row-span-5 col-start-3 row-start-1 h-full overflow-y-auto">
-        <Cards listings={listings} />
+    <div className="relative w-full h-screen flex">
+      <Sidebar />
+      <div className="flex-1 h-full w-full">
+        <Map newLocation={newLocation} isIdle={isIdle} setZoom={16.00}/>
+        <div className="absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 p-6">
+          <Cards listings={listings} />
+        </div>
       </div>
     </div>
   )
