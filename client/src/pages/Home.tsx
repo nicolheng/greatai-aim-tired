@@ -77,7 +77,7 @@ const listings = [
 
 
 const Home = () => {
-  const [newLocation,setnewLocation] = useState<[number,number]>([101.7001903848135,3.055492032127826]); //currently set on default APU, later should be set first recommended location
+  const [newLocation,setnewLocation] = useState<[number,number] | undefined>(); //currently set on default APU, later should be set first recommended location
   const [activeCard, setActiveCard] = useState<number>(0)
   const [isIdle, setIsIdle] = useState<boolean>(false);
   const idleTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
@@ -124,7 +124,7 @@ const Home = () => {
     <div className="relative w-full h-screen flex">
       <Sidebar />
       <div className="flex-1 h-full w-full">
-        <Map newLocation={newLocation} isIdle={isIdle} />
+        <Map newLocation={newLocation} isIdle={isIdle} setZoom={16.00} />
         <div className="absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 p-6">
           <Cards listings={listings} onCardClick={handleClick} />
         </div>

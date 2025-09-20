@@ -4,13 +4,15 @@ import mapboxgl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 interface MapProps {
-  newLocation: [number,number]
+  newLocation: [number,number];
   isIdle: boolean;
+  setZoom:number;
+  setPitch:number;
 }
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2VpcmRvcmFuZ2UiLCJhIjoiY21mbnU0bTUzMGp2czJrcXozczVvNThoZCJ9.xKGXMz-BhPC4zj_Nh7FqAQ'
 
-function Map({newLocation, isIdle}:MapProps) {
+function Map({newLocation = [101.7001903848135,3.055492032127826], isIdle, setZoom = 16.00, setPitch = 60}:MapProps) {
   const mapContainerRef = useRef(null)
   const mapRef = useRef(null)
   const isRotating = useRef(false)
@@ -51,8 +53,8 @@ function Map({newLocation, isIdle}:MapProps) {
       mapRef.current = new mapboxgl.Map({
         container: mapContainerRef.current,
         center: newLocation,
-        zoom: 16.00,
-        pitch: 60
+        zoom: setZoom,
+        pitch: setPitch
       });
 
       markerRef.current = new mapboxgl.Marker({
@@ -87,8 +89,8 @@ function Map({newLocation, isIdle}:MapProps) {
       
       mapRef.current.flyTo({
         center: newLocation,
-        zoom: 16.80,
-        pitch: 60,
+        zoom: setZoom,
+        pitch: setPitch,
         essential: true,
       });
     } else {

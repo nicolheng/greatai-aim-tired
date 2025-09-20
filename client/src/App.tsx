@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Questionnaire from './pages/Questionnaire'
 import Error from './pages/Error'
 import Tinder from './pages/Tinder'
+import FavouriteList from './pages/Favourites'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/tinder" element={<Tinder />} />
+        <Route path="/favourites" element={<FavouriteList />} />
       </Routes>
     </Router>
   )
