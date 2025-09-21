@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { FaQuestion } from "react-icons/fa6";
+import { useLocation } from 'react-router-dom';
 import "intro.js/minified/introjs.min.css";
 
 import Sidebar from '../components/Sidebar'
@@ -8,77 +9,12 @@ import SwipeCards from "../components/SwipeCards";
 import introJs from 'intro.js';
 import Dock from "../components/Dock";
 
-// const listings = [
-//   {
-//     id: 1,
-//     title: 'Downtown Apartment',
-//     image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
-//     price: '$450,000',
-//     location: 'Suburbia, Springfield',
-//     tags: ['4 Bed', '3 Bath', 'Garage'],
-//     isNew: true,
-//     description: 'Spacious modern home with open plan living and large backyard.',
-//     coords: [101.7001903848135,3.055492032127826], 
-//   },
-//   {
-//     id: 2,
-//     title: 'Downtown Apartment',
-//     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
-//     price: '$320,000',
-//     location: 'Downtown, Metropolis',
-//     tags: ['2 Bed', '1 Bath', 'City View'],
-//     isNew: false,
-//     description: 'Cozy apartment in the heart of the city, close to all amenities.',
-//     coords: [101.71341249524647, 3.14899283474485]
-//   },
-//   {
-//     id: 3,
-//     title: 'Country Cottage',
-//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-//     price: '$275,000',
-//     location: 'Countryside, Greenfield',
-//     tags: ['3 Bed', '2 Bath', 'Garden'],
-//     isNew: true,
-//     description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-//     coords: [99.85198429240435, 6.308492265209934], 
-//   },
-//   {
-//     id: 4,
-//     title: 'Country Cottage',
-//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-//     price: '$275,000',
-//     location: 'Countryside, Greenfield',
-//     tags: ['3 Bed', '2 Bath', 'Garden'],
-//     isNew: true,
-//     description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-//     coords: [102.24934548175467, 2.1944992542512964],
-//   },
-//   {
-//     id: 5,
-//     title: 'Country Cottage',
-//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-//     price: '$275,000',
-//     location: 'Countryside, Greenfield',
-//     tags: ['3 Bed', '2 Bath', 'Garden'],
-//     isNew: true,
-//     description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-//     coords: [116.05129273943278, 5.923560454410471],
-//   },
-//   {
-//     id: 6,
-//     title: 'Country Cottage',
-//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-//     price: '$275,000',
-//     location: 'Countryside, Greenfield',
-//     tags: ['3 Bed', '2 Bath', 'Garden'],
-//     isNew: true,
-//     description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-//     coords: [101.96053149325238, 2.757756104575761],
-//   },
-// ]
 
-
-const Home = () => {
+const Swipe = () => {
+  const location = useLocation();
+  const listings = location.state?.listings || [];
+  console.log('Swipe page listings:', listings);
+  console.log('Location state:', location.state);
   const [newLocation,setnewLocation] = useState<[number,number] | undefined>();
   // const [activeCard, setActiveCard] = useState<number>(0)
   const [isIdle, setIsIdle] = useState<boolean>(false);
@@ -203,40 +139,22 @@ const Home = () => {
         <FaQuestion />
       </button>
       <div className="flex-1 h-full w-full">
-        <Map newLocation={newLocation} isIdle={isIdle} setZoom={16.00} />
+        <Map newLocation={newLocation || [101.7001903848135,3.055492032127826]} isIdle={isIdle} setZoom={16.00} setPitch={60} />
 
         <div
           className={`absolute top-0 right-0 h-full w-[32rem] max-w-full z-10 
           ${cardsMinimized ? 'pointer-events-none p-0' : 'pointer-events-auto p-6'} 
           md:pointer-events-auto md:p-6`}
         >
-    
-          {/* Display filtered listings using SwipeCards */}
-          {filteredListings.length > 0 && (
-            <div className="w-full p-4">
-              <h2 className="text-xl font-bold mb-4">Recommended Properties</h2>
-              <SwipeCards
-                listings={filteredListings.map((property) => ({
-                  id: parseInt(property.id, 10), // Convert id to number
-                  title: property.title,
-                  image: property.cover.url,
-                  price: property.prices[0]?.min ? `RM ${property.prices[0].min}` : 'Price not available',
-                  location: property.address.formattedAddress,
-                  coords: [property.address.lat, property.address.lng]
-                }))}
-                onCardClick={(newLocation) => console.log('Navigate to:', newLocation)}
-              />
-            </div>
-          )}
-          {/* <SwipeCards
+          <SwipeCards
+            listings={listings}
             onCardClick={handleClick}
             onMinimizedChange={setCardsMinimized} // add
-          /> */}
+          />
           {/* <Cards listings={listings} onCardClick={handleClick} /> */}
-          
         </div>
       </div>
     </div>
   )
 }
-export default Home
+export default Swipe

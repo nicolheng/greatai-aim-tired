@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import QuestionaireRoadmap from '../components/QuestionaireRoadmap'
 import Sidebar from '../components/Sidebar'
 import Dock from '../components/Dock';
-import SwipeCards from '../components/SwipeCards';
 
 // Define the structure of the API response
 interface Property {
@@ -23,6 +23,7 @@ interface Property {
 }
 
 function Questionnaire() {
+  const navigate = useNavigate();
   // State for answers
   const [answers, setAnswers] = useState({
     household_type: '',
@@ -103,7 +104,15 @@ function Questionnaire() {
               className="input input-bordered w-full"
               placeholder="e.g. Downtown, Subang Jaya (comma separated)"
               value={Array.isArray(answers.preferred_locations) ? answers.preferred_locations.join(', ') : ''}
-              onChange={e => setAnswers(a => ({ ...a, preferred_locations: e.target.value.split(',').map(s => s.trim()).filter(s => s) }))}
+              onChange={e =>
+                setAnswers(a => ({
+                  ...a,
+                  preferred_locations: e.target.value
+                    .split(',')
+                    .map(s => s.trim())
+                    .filter(s => s.length > 0)
+                }))
+              }
             />
           ),
         },
@@ -324,7 +333,6 @@ function Questionnaire() {
   const currentMain = questions[mainStep];
   const isFirst = mainStep === 0;
   const isLast = mainStep === questions.length - 1;
-  const [filteredListings, setFilteredListings] = useState<Property[]>([]);
 
   // Validation function to check if all required fields are filled
   const isFormValid = () => {
@@ -350,9 +358,7 @@ function Questionnaire() {
     if (mainStep < questions.length - 1) {
       setMainStep(m => m + 1);
       setFadeKey(k => k + 1);
-      setnewLocation(newLocation);
     }
-  }
   }
 
   function handleBack() {
@@ -396,8 +402,41 @@ function Questionnaire() {
       });
 
       if (response.data.success) {
-        // Set the first 10 results to the state
-        setFilteredListings(response.data.properties.slice(0, 10));
+        console.log('API response properties:', response.data.properties);
+        // Map and filter properties to ensure only valid coordinates are passed to Mapbox
+        const mappedListings = response.data.properties.slice(0, 10).map((property: Property) => {
+          console.log('Property id:', property.id, 'type:', typeof property.id);
+          // Ensure coordinates are in correct order: [lng, lat] for Mapbox
+          let lng = property.address.lng;
+          let lat = property.address.lat;
+          // Validate and swap if necessary (latitude should be -90 to 90, longitude -180 to 180)
+          if (Math.abs(lat) > 90 && Math.abs(lng) <= 90) {
+            // Likely swapped
+            [lng, lat] = [lat, lng];
+            console.log('Swapped coordinates for property', property.id, 'from [', property.address.lng, ',', property.address.lat, '] to [', lng, ',', lat, ']');
+          }
+          return {
+            id: property.id,
+            title: property.title,
+            image: property.cover.url,
+            price: property.prices[0]?.min ? `RM ${property.prices[0].min}` : 'Price not available',
+            location: property.address.formattedAddress,
+            coords: [lng, lat] as [number, number] // Mapbox expects [lng, lat]
+          };
+        })
+        // Filter out any properties with invalid coordinates
+        .filter(listing => {
+          const [lng, lat] = listing.coords;
+          const valid = typeof lng === 'number' && typeof lat === 'number' && Math.abs(lat) <= 90 && Math.abs(lng) <= 180;
+          if (!valid) {
+            console.warn('Filtered out property with invalid coords:', listing);
+          }
+          return valid;
+        });
+        console.log('Mapped listings (valid only):', mappedListings);
+
+        // Navigate to Swipe page with the listings
+        navigate('/swipe', { state: { listings: mappedListings } });
       } else {
         console.error('API returned an error:', response.data.error);
       }
@@ -447,23 +486,6 @@ function Questionnaire() {
           </div>
         </div>
       </div>
-      {/* Display filtered listings using SwipeCards */}
-      {/* {filteredListings.length > 0 && (
-        <div className="w-full p-4">
-          <h2 className="text-xl font-bold mb-4">Recommended Properties</h2>
-          <SwipeCards
-            listings={filteredListings.map((property) => ({
-              id: parseInt(property.id, 10), // Convert id to number
-              title: property.title,
-              image: property.cover.url,
-              price: property.prices[0]?.min ? `RM ${property.prices[0].min}` : 'Price not available',
-              location: property.address.formattedAddress,
-              coords: [property.address.lat, property.address.lng]
-            }))}
-            onCardClick={(newLocation) => console.log('Navigate to:', newLocation)}
-          />
-        </div>
-      )} */}
     </div>
   )
 }
