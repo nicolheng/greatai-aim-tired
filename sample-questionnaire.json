@@ -1,0 +1,21 @@
+{
+  "household_type": "family",
+  "budget": {
+    "min": 2500,
+    "max": 4000
+  },
+  "preferred_locations": ["Downtown", "Subang Jaya"],
+  "property_type": ["apartment", "condo"],
+  "bedrooms_min": 3,
+  "bathrooms_min": 2,
+  "floor_area": {
+    "min": 900,
+    "max": 1400
+  },
+  "parking_spaces_min": 2,
+  "amenities_required": ["gym", "pool", "24h_security"],
+  "building_preference": "high_rise",
+  "near_public_transport": true,
+  "environment_preference": "quiet",
+  "near_schools": true
+}
