@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
- @plugin "daisyui" {
-    themes: all;
- }
+@plugin "daisyui" {
+   themes: all;
+}
+
+/* Preline UI */
+@import "preline/variants.css";
+@source "../node_modules/preline/dist/*.js";
+
+
+@keyframes fadein-moveleft {
+   from {
+      opacity: 0;
+      transform: translateX(-40px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+.animate-fadein {
+   animation: fadein-moveleft 0.5s cubic-bezier(0.4,0,0.2,1);
+}
