@@ -1,7 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
 import QuestionaireRoadmap from '../components/QuestionaireRoadmap'
 import Sidebar from '../components/Sidebar'
 import Dock from '../components/Dock';
+import SwipeCards from '../components/SwipeCards';
+
+// Define the structure of the API response
+interface Property {
+  id: string;
+  title: string;
+  cover: {
+    url: string;
+  };
+  prices: {
+    min?: number;
+  }[];
+  address: {
+    formattedAddress: string;
+    lat: number;
+    lng: number;
+  };
+}
 
 function Questionnaire() {
   // State for answers
@@ -305,6 +324,7 @@ function Questionnaire() {
   const currentMain = questions[mainStep];
   const isFirst = mainStep === 0;
   const isLast = mainStep === questions.length - 1;
+  const [filteredListings, setFilteredListings] = useState<Property[]>([]);
 
   // Validation function to check if all required fields are filled
   const isFormValid = () => {
@@ -340,7 +360,7 @@ function Questionnaire() {
     }
   }
 
-  function handleFinish() {
+  async function handleFinish() {
     // Transform the data to match the backend expected format
     const finalData = {
       household_type: answers.household_type,
@@ -365,9 +385,23 @@ function Questionnaire() {
     };
 
     console.log('Questionnaire Data:', JSON.stringify(finalData, null, 2));
-    
-    // Navigate to next page
-    window.location.href = '/swipe';
+
+    try {
+      // Send data to the API and filter results
+      const response = await axios.post('http://localhost:5000/api/filter-properties', {
+        budget: finalData.budget,
+        preferred_locations: finalData.preferred_locations
+      });
+
+      if (response.data.success) {
+        // Set the first 10 results to the state
+        setFilteredListings(response.data.properties.slice(0, 10));
+      } else {
+        console.error('API returned an error:', response.data.error);
+      }
+    } catch (error) {
+      console.error('Error calling the API:', error);
+    }
   }
 
   return (
@@ -411,6 +445,23 @@ function Questionnaire() {
           </div>
         </div>
       </div>
+      {/* Display filtered listings using SwipeCards */}
+      {filteredListings.length > 0 && (
+        <div className="w-full p-4">
+          <h2 className="text-xl font-bold mb-4">Recommended Properties</h2>
+          <SwipeCards
+            listings={filteredListings.map((property) => ({
+              id: parseInt(property.id, 10), // Convert id to number
+              title: property.title,
+              image: property.cover.url,
+              price: property.prices[0]?.min ? `RM ${property.prices[0].min}` : 'Price not available',
+              location: property.address.formattedAddress,
+              coords: [property.address.lat, property.address.lng]
+            }))}
+            onCardClick={(newLocation) => console.log('Navigate to:', newLocation)}
+          />
+        </div>
+      )}
     </div>
   )
 }
