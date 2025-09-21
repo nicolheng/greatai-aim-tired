@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { HiOutlineHome, HiOutlineHeart, HiSparkles, HiBars3, HiXMark } from 'react-icons/hi2';
+import LogoLong from '../assets/logo-long.png';
 
 function Sidebar() {
   const [open, setOpen] = useState(false);
 
   return (
-
     <div>
       {/* Toggle button */}
       {!open && (
@@ -24,14 +24,11 @@ function Sidebar() {
           fixed top-0 left-0 z-40 transition-transform duration-200
           w-full max-w-xl
           ${open ? 'translate-y-0' : '-translate-y-full'}
-
         `}
         style={{ minWidth: '320px' }}
       >
-
-        <div className="flex flex-row items-center bg-white rounded-b-xl shadow-lg px-4 py-2 gap-2 border-b border-gray-200">
+        <div className="flex flex-row items-center bg-white rounded-b-xl shadow-lg px-4 py-2 gap-1 border-b border-gray-200 ">
           {/* Close button */}
-
           <button
             className="btn btn-square btn-ghost"
             onClick={() => setOpen(false)}
@@ -40,8 +37,7 @@ function Sidebar() {
             <HiXMark size={22} />
           </button>
           {/* Logo */}
-          <span className="text-2xl font-bold text-indigo-600">FR</span>
-          <span className="text-indigo-400 text-lg font-bold mr-4">estate</span>
+          <img src={LogoLong} alt="Logo" className="mix-blend-multiply h-10 relative" />
           {/* Links */}
           <a className="btn btn-ghost flex items-center gap-2" href="/">
             <HiOutlineHome size={20} />
@@ -57,10 +53,8 @@ function Sidebar() {
             <span className="hidden sm:inline font-bold">AI Matcher</span>
           </a>
         </div>
-
       </div>
       {/* Overlay */}
-
       {open && (
         <div
           className="fixed inset-0 bg-base-300/20 z-30"

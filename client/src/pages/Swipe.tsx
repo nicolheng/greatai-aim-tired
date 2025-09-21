@@ -196,7 +196,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex overflow-hidden">
+    <div className="relative w-full h-screen flex">
       <Sidebar />
       <Dock/>
       <button className="btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 h-10 w-10 fixed top-1 left-2 md:z-5 z-20 md:hover:top-15 md:top-15  transition-all" onClick={startTutorial}>

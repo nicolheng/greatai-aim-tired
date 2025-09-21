@@ -48,7 +48,6 @@ function App() {
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/tinder" element={<Tinder />} />
         <Route path="/details/:id" element={<Details />} />
-
       </Routes>
     </Router>
   )

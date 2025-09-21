@@ -126,5 +126,4 @@ function CardCarousel({ images }: CardCarouselProps) {
   );
 }
 
-
 export default CardCarousel;
