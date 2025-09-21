@@ -22,9 +22,14 @@ router.post("/", async (req, res) => {
     // Fetch all properties from the database
     const allProperties = await getAllProperties();
     console.log(`Fetched ${allProperties.length} properties from database`);
+    console.log('First property sample:', JSON.stringify(allProperties[0], null, 2));
 
-    // Filter by budget and location
-    const filtered = allProperties.filter((prop) => {
+    // Take only the first 100 properties, then filter those
+    const first100Properties = allProperties.slice(0, 100);
+    console.log(`Considering first ${first100Properties.length} properties`);
+
+    // Filter by budget and location from the first 100 properties
+    const filtered = first100Properties.filter((prop) => {
       // Budget filter: check if property price is within min and max
       const price = prop.prices && prop.prices[0] && typeof prop.prices[0].min === 'number' ? prop.prices[0].min : 0;
       const inBudget = price >= budget.min && price <= budget.max;
@@ -38,7 +43,7 @@ router.post("/", async (req, res) => {
       return inBudget && inLocation;
     });
 
-    console.log(`Filtered to ${filtered.length} properties`);
+    console.log(`Filtered ${filtered.length} matching properties from first 100`);
 
     // Return the first 10 filtered properties
     const top10Properties = filtered.slice(0, 10);
