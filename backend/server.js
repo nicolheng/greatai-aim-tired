@@ -1,19 +1,15 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "./config/db.js";
 import authRoutes from "./routes/auth.js";
 import usersRoutes from "./routes/users.js";
-import propertiesRoutes from "./routes/properties.js";
 
 dotenv.config();
-connectDB();
 
 const app = express();
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", usersRoutes);
-app.use("/api/properties", propertiesRoutes);
 
 //testing purpose :D
 app.get("/", (req, res) => {
