@@ -1,217 +1,64 @@
+import LogoCarousel from "../components/LogoCarousel"
+import Sidebar from "../components/Sidebar"
+import Dock from "../components/Dock"
+import Footer from "../components/Footer"
+import StepsButtons from "../components/StepsButtons"
 
-import React, { useState, useEffect, useCallback } from "react";
-import { FaQuestion } from "react-icons/fa6";
-import "intro.js/minified/introjs.min.css";
-
-import Sidebar from '../components/Sidebar'
-import Map from '../components/Map'
-import SwipeCards from "../components/SwipeCards";
-import SetFavButtons from "../components/SetFavButtons";
-import introJs from 'intro.js';
-
-const listings = [
-  {
-    id: 0,
-    title: 'Modern Family Home',
-    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
-    price: '$450,000',
-    location: 'Suburbia, Springfield',
-    tags: ['4 Bed', '3 Bath', 'Garage'],
-    isNew: true,
-    description: 'Spacious modern home with open plan living and large backyard.',
-    coords: [101.7001903848135,3.055492032127826], 
-  },
-  {
-    id: 1,
-    title: 'Downtown Apartment',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
-    price: '$320,000',
-    location: 'Downtown, Metropolis',
-    tags: ['2 Bed', '1 Bath', 'City View'],
-    isNew: false,
-    description: 'Cozy apartment in the heart of the city, close to all amenities.',
-    coords: [101.71341249524647, 3.14899283474485]
-  },
-  {
-    id: 2,
-    title: 'Country Cottage',
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    price: '$275,000',
-    location: 'Countryside, Greenfield',
-    tags: ['3 Bed', '2 Bath', 'Garden'],
-    isNew: true,
-    description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-    coords: [99.85198429240435, 6.308492265209934], 
-  },
-  {
-    id: 3,
-    title: 'Country Cottage',
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    price: '$275,000',
-    location: 'Countryside, Greenfield',
-    tags: ['3 Bed', '2 Bath', 'Garden'],
-    isNew: true,
-    description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-    coords: [102.24934548175467, 2.1944992542512964],
-  },
-  {
-    id: 4,
-    title: 'Country Cottage',
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    price: '$275,000',
-    location: 'Countryside, Greenfield',
-    tags: ['3 Bed', '2 Bath', 'Garden'],
-    isNew: true,
-    description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-    coords: [116.05129273943278, 5.923560454410471],
-  },
-  {
-    id: 5,
-    title: 'Country Cottage',
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    price: '$275,000',
-    location: 'Countryside, Greenfield',
-    tags: ['3 Bed', '2 Bath', 'Garden'],
-    isNew: true,
-    description: 'Charming cottage surrounded by nature, perfect for a quiet retreat.',
-    coords: [101.96053149325238, 2.757756104575761],
-  },
-]
-
-
-const Home = () => {
-  const [newLocation,setnewLocation] = useState<[number,number] | undefined>(); //currently set on default APU, later should be set first recommended location
-  // const [activeCard, setActiveCard] = useState<number>(0)
-  const [isIdle, setIsIdle] = useState<boolean>(false);
-  const idleTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
-
-  // Idle detection
-  const IDLE_TIMEOUT = 5000; // 5 seconds
-
-  const resetIdleTimer = useCallback(() => {
-    console.log('User activity detected, resetting idle timer');
-    setIsIdle(false);
-    if (idleTimeoutRef.current) {
-      clearTimeout(idleTimeoutRef.current);
-    }
-    idleTimeoutRef.current = setTimeout(() => {
-      console.log('User is idle');
-      setIsIdle(true);
-    }, IDLE_TIMEOUT);
-  }, []);
-
-  useEffect(() => {
-    const events = ['click', 'touchstart'];
-    events.forEach((event) => {
-      window.addEventListener(event, resetIdleTimer);
-    });
-
-    resetIdleTimer(); // Start timer on mount
-
-    return () => {
-      events.forEach((event) => {
-        window.removeEventListener(event, resetIdleTimer);
-      });
-      if (idleTimeoutRef.current) {
-        clearTimeout(idleTimeoutRef.current);
-      }
-    };
-  }, [resetIdleTimer]);
-
-
-  // Handle next location to fly to from Cards
-  const handleClick = (newLocation:[number,number]) => {
-    console.log("Button clicked",newLocation)
-    setnewLocation(newLocation);
-  }
-
-  // Intro.js tutorial for new users
-  const startTutorial = () => {
-    introJs().setOptions({
-      steps: [
-        {
-          element: '.sidebar', // Target the sidebar element
-          title: 'Welcome to GreatAI!👋',
-          intro: 'This is the sidebar where you can navigate through different sections.',
-          highlightClass: "introjs-custom-highlight",
-        },
-        {
-          element: '.map-container', // Target the map element
-          title: 'Map View',
-          intro: 'This is the map view where you can see the locations of the listings.',
-          highlightClass: "introjs-custom-highlight",
-        },
-        {
-          element: '.cards', // Target the Cards element
-          title: 'Cards',
-          intro: 'FRestate AI have chosen some houses/buildings you might like!',
-          highlightClass: "introjs-custom-highlight",
-        },
-        {
-          element: '.cards', // Target the Cards element
-          title: 'Interact with Cards',
-          intro: 'Swipe LEFT if you do not like the house/building, swipe RIGHT to favourite the ones you like!',
-          highlightClass: "introjs-custom-highlight",
-        },
-        {
-          title: 'Get Started!',
-          intro: 'Feel free to explore the app and click on any listing to see more details on the map.',
-          highlightClass: "introjs-custom-highlight",
-        },
-      ],
-    }).start();
-  };
-  
-  useEffect(() => {
-    // Inject custom Intro.js styles
-    const style = document.createElement("style");
-    style.innerHTML = `
-      .introjs-tooltip {
-        color: #000;
-        font-family: system-ui;
-      }
-      .introjs-tooltip-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        font-family: system-ui;        
-      }
-      .introjs-button {
-        background-color: #4B0082;
-        border-radius:.6em;
-        color: white;
-        text-shadow: none;
-      }
-      introjs-button:hover {
-        background-color: #5C6DC9;
-        color: white;
-        border-color: unset;
-        font-family: system-ui;
-        font-weight: bold;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
-
-  return (
-    <div className="relative w-full h-screen flex overflow-hidden">
-      <Sidebar />
-      <button className="btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 h-10 w-10 fixed top-15 left-2 z-5 hover:top-15.5 transition-all" onClick={startTutorial}>
-        <FaQuestion />
-      </button>
-      <div className="flex-1 h-full w-full">
-        <Map newLocation={newLocation} isIdle={isIdle} setZoom={16.00} />
-
-        <div className="absolute top-0 right-10 h-full w-[32rem] max-w-full z-10">
-          <SwipeCards listings={listings} onCardClick={handleClick} />
-          {/* <Cards listings={listings} onCardClick={handleClick} /> */}
-        
+function Landing () {
+    return (
+        <>
+        <Dock />
+        <Sidebar />
+        {/* Landing page title */}
+        <div className="w-full h-64 bg-base items-center justify-center flex flex-col m-8">
+            <h1 className="text-7xl font-bold">Landing Page</h1>
+            <p className="text-gray-600 mt-8">Small Description</p>
         </div>
-      </div>
-    </div>
-  )
-}
-export default Home
 
+        {/* Main content */}
+        <div className="flex w-full items-center justify-center mt-8"><button className="bg-indigo-500 text-white py-2 px-4 rounded">Get Started</button></div>
+        <div className="flex w-full items-center justify-center mt-4"><p className="text-gray-600">small trial text</p></div>
+
+        {/* Video demo */}
+        <div className="flex w-full h-[40rem] items-center justify-center mt-12 pl-20 pr-20"><p className="w-full h-full bg-gray-300 text-gray-600">video demo</p></div>
+        
+        {/* Logo carousel */}
+        <div className="flex flex-col w-full items-center justify-center mt-10 mb-10 gap-6">
+            <h2 className="text-4xl font-bold">Our Tools</h2>
+            <LogoCarousel />
+        </div>
+
+        {/* Problem Section */}
+        <div className="w-full h-110 bg-gray-200 items-center justify-center flex flex-col mt-8 p-8">
+            <h1 className="text-4xl font-bold">Problem Section</h1>
+            <div className="grid grid-cols-3 gap-4 w-full h-full p-4 mt-4">
+                <div className="bg-gray-300 w-full h-64 p-4">Problem 1</div>
+                <div className="bg-gray-300 w-full h-64 p-4">Problem 2</div>
+                <div className="bg-gray-300 w-full h-64 p-4">Problem 3</div>
+            </div>
+        </div>
+
+        {/* Solution Section */}
+        <div className="w-full h-168 bg-gray-200 items-center justify-center flex flex-col mt-8 mb-8">
+            <h1 className="text-4xl font-bold">Solution Section</h1>
+            <div className="grid grid-cols-2 gap-8 w-full h-full p-8 pt-2 mt-4">
+                <div className="bg-gray-300 w-full h-auto p-4 row-span-2">Problem 1</div>
+                <div className="bg-gray-300 w-full h-auto p-4">Problem 2</div>
+                <div className="bg-gray-300 w-full h-auto p-4">Problem 3</div>
+            </div>
+        </div>
+
+        {/* Call to Action Section */}
+        <div className="w-full h-full py-8 items-center justify-center flex flex-col mt-8 mb-8">
+            <h1 className="text-4xl font-bold text-cen pb-8">With just a few simple steps</h1>
+                <StepsButtons />
+
+        </div>
+
+        {/* Footer */}
+        <Footer />
+        </>
+    )
+}
+
+export default Landing

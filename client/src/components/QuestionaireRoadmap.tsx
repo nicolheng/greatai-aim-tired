@@ -15,9 +15,11 @@ const steps = [
 
 function QuestionaireRoadmap({ currentStep = 0 }: Props) {
   return (
-    <ul className="steps steps-vertical">
+    <ul className="steps md:steps-vertical steps-horizontal max-w-80">
       {steps.map((label, idx) => (
-        <li key={label} className={`step${idx < currentStep ? ' step-primary' : idx === currentStep ? ' step-primary' : ''}`}>{label}</li>
+        <li key={label} className={`step ${idx < currentStep ? 'step-primary' : idx === currentStep ? 'step-primary' : ''} lg:step-label`}>
+          <span className="hidden lg:block">{label}</span>
+        </li>
       ))}
     </ul>
   )
