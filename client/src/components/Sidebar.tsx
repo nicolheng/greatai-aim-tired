@@ -8,7 +8,7 @@ function Sidebar() {
       {/* Burger button - absolutely positioned top left, hidden when sidebar is open */}
       {!open && (
         <button
-          className="btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 fixed top-2 left-2 z-50 hover:top-2.5 transition-all"
+          className="sidebar btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 fixed top-2 left-2 z-50 hover:top-2.5 transition-all"
           onClick={() => setOpen(true)}
           aria-label="Open sidebar"
         >

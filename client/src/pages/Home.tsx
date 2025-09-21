@@ -1,10 +1,12 @@
 
 import React, { useState, useEffect, useCallback } from "react";
+import { FaQuestion } from "react-icons/fa6";
+import "intro.js/minified/introjs.min.css";
 
 import Sidebar from '../components/Sidebar'
-import Cards from '../components/Cards'
 import Map from '../components/Map'
-
+import SwipeCards from "../components/SwipeCards";
+import introJs from 'intro.js';
 
 const listings = [
   {
@@ -78,7 +80,7 @@ const listings = [
 
 const Home = () => {
   const [newLocation,setnewLocation] = useState<[number,number] | undefined>(); //currently set on default APU, later should be set first recommended location
-  const [activeCard, setActiveCard] = useState<number>(0)
+  // const [activeCard, setActiveCard] = useState<number>(0)
   const [isIdle, setIsIdle] = useState<boolean>(false);
   const idleTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
 
@@ -115,18 +117,95 @@ const Home = () => {
     };
   }, [resetIdleTimer]);
 
+
+  // Handle next location to fly to from Cards
   const handleClick = (newLocation:[number,number]) => {
     console.log("Button clicked",newLocation)
     setnewLocation(newLocation);
   }
 
+  // Intro.js tutorial for new users
+  const startTutorial = () => {
+    introJs().setOptions({
+      steps: [
+        {
+          element: '.sidebar', // Target the sidebar element
+          title: 'Welcome to GreatAI!👋',
+          intro: 'This is the sidebar where you can navigate through different sections.',
+          highlightClass: "introjs-custom-highlight",
+        },
+        {
+          element: '.map-container', // Target the map element
+          title: 'Map View',
+          intro: 'This is the map view where you can see the locations of the listings.',
+          highlightClass: "introjs-custom-highlight",
+        },
+        {
+          element: '.cards', // Target the Cards element
+          title: 'Cards',
+          intro: 'FRestate AI have chosen some houses/buildings you might like!',
+          highlightClass: "introjs-custom-highlight",
+        },
+        {
+          element: '.cards', // Target the Cards element
+          title: 'Interact with Cards',
+          intro: 'Swipe LEFT if you do not like the house/building, swipe RIGHT to favourite the ones you like!',
+          highlightClass: "introjs-custom-highlight",
+        },
+        {
+          title: 'Get Started!',
+          intro: 'Feel free to explore the app and click on any listing to see more details on the map.',
+          highlightClass: "introjs-custom-highlight",
+        },
+      ],
+    }).start();
+  };
+  
+  useEffect(() => {
+    // Inject custom Intro.js styles
+    const style = document.createElement("style");
+    style.innerHTML = `
+      .introjs-tooltip {
+        color: #000;
+        font-family: system-ui;
+      }
+      .introjs-tooltip-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: system-ui;        
+      }
+      .introjs-button {
+        background-color: #4B0082;
+        border-radius:.6em;
+        color: white;
+        text-shadow: none;
+      }
+      introjs-button:hover {
+        background-color: #5C6DC9;
+        color: white;
+        border-color: unset;
+        font-family: system-ui;
+        font-weight: bold;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <div className="relative w-full h-screen flex">
       <Sidebar />
+      <button className="btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 h-10 w-10 fixed top-15 left-2 z-5 hover:top-15.5 transition-all" onClick={startTutorial}>
+        <FaQuestion />
+      </button>
       <div className="flex-1 h-full w-full">
         <Map newLocation={newLocation} isIdle={isIdle} setZoom={16.00} />
+
         <div className="absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 p-6">
-          <Cards listings={listings} onCardClick={handleClick} />
+          <SwipeCards listings={listings} onCardClick={handleClick} />
+          {/* <Cards listings={listings} onCardClick={handleClick} /> */}
         </div>
       </div>
     </div>

@@ -1,52 +1,74 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 
-const demoCards = [
-  {
-    id: 1,
-    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
-    title: 'Walkers Delight , ',
-  },
-  {
-    id: 2,
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
-    title: 'Downtown Apartment',
-  },
-  {
-    id: 3,
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    title: 'Country Cottage 1',
-  },
-  {
-    id: 4,
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    title: 'Country Cottage 2',
-  },
-  {
-    id: 5,
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    title: 'Country Cottage 3 ',
-  },
-  {
-    id: 6,
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    title: 'Country Cottage 4',
-  },
-  {
-    id: 7,
-    image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
-    title: 'Country Cottage 5',
-  },
-]
+type Listing = {
+  id: number;
+  title: string;
+  image: string;
+  image2?: string;
+  image3?: string;
+  price: string;
+  location: string;
+  tags?: string[];
+  isNew?: boolean;
+  description?: string;
+  coords: [number, number];
+};
+
+interface SwipeCardProps{
+  listings: Listing[],
+  onCardClick: (newLocation: [number, number]) => void;
+}
+
+// const demoCards = [
+//   {
+//     id: 1,
+//     image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
+//     title: 'Walkers Delight , ',
+//   },
+//   {
+//     id: 2,
+//     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
+//     title: 'Downtown Apartment',
+//   },
+//   {
+//     id: 3,
+//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
+//     title: 'Country Cottage 1',
+//   },
+//   {
+//     id: 4,
+//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
+//     title: 'Country Cottage 2',
+//   },
+//   {
+//     id: 5,
+//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
+//     title: 'Country Cottage 3 ',
+//   },
+//   {
+//     id: 6,
+//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
+//     title: 'Country Cottage 4',
+//   },
+//   {
+//     id: 7,
+//     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
+//     title: 'Country Cottage 5',
+//   },
+// ]
 
 
 // Drag state now includes startX/startY for tracking
-function SwipeCards() {
-  const [cards, setCards] = useState(demoCards)
+
+function SwipeCards({listings,onCardClick}: SwipeCardProps) {
+  const [cards, setCards] = useState(listings)
   const [drag, setDrag] = useState({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 })
   const [animating, setAnimating] = useState(false)
   const [showNext, setShowNext] = useState(false)
   const [swipeResult, setSwipeResult] = useState<null | 'left' | 'right'>(null)
   const cardRef = useRef<HTMLDivElement | null>(null)
+
+  const MAX_ANGLE = 30
 
   // Drag handlers for the image
   const handleImgDragStart = (e: React.MouseEvent | React.TouchEvent) => {
@@ -78,18 +100,29 @@ function SwipeCards() {
 
   const handleImgDragEnd = () => {
     if (!drag.isDragging) return
-    const threshold = 120
+    const threshold = 80
+    if (Math.abs(drag.x) < threshold) {
+      setDrag({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 })
+      setSwipeResult(null)
+      return
+    }
     if (drag.x > threshold) {
       setSwipeResult('right')
-      animateOut('right')
+      if (!drag.isDragging){
+        animateOut('right')
+      }
     } else if (drag.x < -threshold) {
       setSwipeResult('left')
-      animateOut('left')
+      if (!drag.isDragging){
+        animateOut('left')
+      }
     } else {
       setDrag({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 })
       setSwipeResult(null)
     }
   }
+
+
 
   // Animate next card sliding up
   const animateOut = (direction: 'left' | 'right') => {
@@ -107,33 +140,21 @@ function SwipeCards() {
   const topCard = cards[0]
   const nextCard = cards[1]
   const thirdCard = cards[2]
+  const fourthCard = cards[3]
+  const fifthCard = cards[4]
 
   return (
-    <div className="relative w-[350px] h-[480px] mx-auto mt-10 select-none">
+    <div className="cards relative w-[350px] h-[480px] mx-auto mt-10 select-none">
       {cards.length === 0 && (
         <div className="absolute inset-0 flex items-center justify-center bg-base-200 rounded-2xl shadow-lg">
           <span className="text-lg text-base-content/60">No more cards</span>
         </div>
       )}
-      {thirdCard && (
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow z-0 border border-base-300 transition-transform duration-500"
-          style={{
-            transform: 'translateY(40px) scale(0.96)',
-            zIndex: 0,
-            opacity: 0.7,
-            pointerEvents: 'none',
-          }}
-        >
-          <img src={thirdCard.image} alt={thirdCard.title} className="w-[260px] h-[320px] object-cover rounded-xl mt-8" />
-          <div className="mt-4 text-lg font-semibold">{thirdCard.title}</div>
-        </div>
-      )}
       {nextCard && (
         <div
-          className={`absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow-lg z-0 border border-base-300 transition-transform duration-500 ${showNext ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-80'}`}
+          className={`absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow-lg z-0 border border-base-300 transition-transform duration-500 ${showNext ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-95'}`}
           style={{
-            transform: 'translateY(20px) scale(0.98)',
+            transform: 'translateY(110px) scale(0.95)',
             zIndex: 1,
             pointerEvents: 'none',
           }}
@@ -142,14 +163,54 @@ function SwipeCards() {
           <div className="mt-4 text-lg font-semibold">{nextCard.title}</div>
         </div>
       )}
+      {thirdCard && (
+        <div
+          className={`absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow-lg z-0 border border-base-300 transition-transform duration-500 ${showNext ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-95'}`}
+          style={{
+            transform: 'translateY(80px) scale(0.95)',
+            zIndex: 1,
+            pointerEvents: 'none',
+          }}
+        >
+          <img src={thirdCard.image} alt={thirdCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
+          <div className="mt-4 text-lg font-semibold">{thirdCard.title}</div>
+        </div>
+      )}
+      {fourthCard && (
+        <div
+          className={`absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow-lg z-0 border border-base-300 transition-transform duration-500 ${showNext ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-95'}`}
+          style={{
+            transform: 'translateY(50px) scale(0.95)',
+            zIndex: 1,
+            pointerEvents: 'none',
+          }}
+        >
+          <img src={fourthCard.image} alt={fourthCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
+          <div className="mt-4 text-lg font-semibold">{fourthCard.title}</div>
+        </div>
+      )}
+      {fifthCard && (
+        <div
+          className={`absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow-lg z-0 border border-base-300 transition-transform duration-500 ${showNext ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-95'}`}
+          style={{
+            transform: 'translateY(20px) scale(0.95)',
+            zIndex: 1,
+            pointerEvents: 'none',
+          }}
+        >
+          <img src={fifthCard.image} alt={fifthCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
+          <div className="mt-4 text-lg font-semibold">{fifthCard.title}</div>
+        </div>
+      )}
       {topCard && (
         <div
           ref={cardRef}
           className={`absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow-2xl z-10 border border-base-300 cursor-grab transition-transform duration-200 ${animating ? 'pointer-events-none' : ''}`}
           style={{
-            transform: `translate(${drag.x}px, ${drag.y}px) rotate(${drag.y/12}deg)`,
+            transform: `translateX(${drag.x}px) rotate(${drag.y/12}deg)`,
             zIndex: 2,
           }}
+          onClick={() => onCardClick(topCard.coords)}
           onMouseDown={handleImgDragStart}
           onMouseMove={drag.isDragging ? handleImgDragMove : undefined}
           onMouseUp={handleImgDragEnd}
@@ -158,21 +219,56 @@ function SwipeCards() {
           onTouchMove={handleImgDragMove}
           onTouchEnd={handleImgDragEnd}
         >
-          <img
-            src={topCard.image}
-            alt={topCard.title}
-            className="w-[280px] h-[340px] object-cover rounded-xl mt-8 cursor-grab"
+          {/* Custom image grid */}
+          <div className="grid grid-cols-3 grid-rows-2 gap-2 p-4"
             draggable={false}
-            style={{ userSelect: 'none' }}
-          />
-          <div className="mt-4 text-lg font-semibold">{topCard.title}</div>
-          {/* Overlay icons for swipe direction only after drag ends */}
-          {swipeResult === 'right' && (
-            <div className="absolute top-10 left-10 text-green-500 text-4xl font-bold opacity-80 rotate-[-15deg]">♥</div>
-          )}
-          {swipeResult === 'left' && (
-            <div className="absolute top-10 right-10 text-red-500 text-4xl font-bold opacity-80 rotate-[15deg]">🗑️</div>
-          )}
+            style={{ userSelect: 'none' }}>
+            {/* Main cover image: spans 2 cols and 2 rows */}
+            <div className="col-span-2 row-span-2">
+              <img
+                src={topCard.image}
+                alt={topCard.title}
+                className="object-cover w-full h-full rounded-xl min-h-[180px] max-h-[260px]"
+              />
+            </div>
+            {/* Top right image (placeholder or extra image) */}
+            <div className="col-start-3 row-start-1">
+              <img
+                src={topCard.image2 || topCard.image}
+                alt={topCard.title + ' extra 1'}
+                className="object-cover w-full h-full rounded-xl min-h-[85px] max-h-[120px]"
+              />
+            </div>
+            {/* Bottom right image (placeholder or extra image) */}
+            <div className="col-start-3 row-start-2">
+              <img
+                src={topCard.image3 || topCard.image}
+                alt={topCard.title + ' extra 2'}
+                className="object-cover w-full h-full rounded-xl min-h-[85px] max-h-[120px]"
+              />
+            </div>
+          </div>
+          <div className="card-body pt-2">
+            <h2 className="card-title">
+              {topCard.title}
+              {topCard.isNew && <div className="badge badge-secondary">NEW</div>}
+            </h2>
+            <p className="text-sm text-gray-500">{topCard.location}</p>
+            <p className="font-bold text-lg">{topCard.price}</p>
+            {topCard.description && <p className="text-xs mt-1">{topCard.description}</p>}
+            <div className="card-actions justify-end flex-wrap mt-2">
+              {topCard.tags?.map(tag => (
+                <div key={tag} className="badge badge-outline">{tag}</div>
+              ))}
+            </div>
+          </div>
+            {/* Overlay icons for swipe direction only after drag ends */}
+            {swipeResult === 'right' && (
+              <div className="absolute w-full h-full items-center justify-center text-green-500 text-7xl font-bold bg-red-500 opacity-100">♥</div>
+            )}
+            {swipeResult === 'left' && (
+              <div className="absolute w-full h-full items-center justify-center text-red-500 text-7xl font-bold bg-gray-500 opacity-100">🗑️</div>
+            )}
         </div>
       )}
     </div>

@@ -1,4 +1,6 @@
 import Map from './Map';
+import CardCarousel from './CardCarousel';
+
 import React from 'react';
 import { useState, useEffect, useCallback } from 'react';
 
@@ -44,7 +46,7 @@ function FocusedFav() {
     <>
     <div className="flex flex-col w-[90vw] min-h-screen justify-self-center bg-base-200 p-10 mt-10">
         <div className="relative justify-center w-full h-[70vh] ">
-            <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80" alt="Eiffel Tower" className="object-cover w-full h-full" />
+            <CardCarousel />
             <div className="absolute flex bottom-0 right-0 w-[15vw] h-[10vw] bg-cyan-200 z-2 mb-4 mr-4 overflow-hidden justify-center items-center place-items-center m-auto">
                 <Map isIdle={isIdle} setZoom={15.3} setPitch={70}/>
             {/* add newLocation coords into Map when backend provides */}
