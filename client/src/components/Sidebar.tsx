@@ -1,57 +1,69 @@
 import React, { useState } from 'react'
+import { HiOutlineHome, HiOutlineHeart, HiSparkles, HiBars3, HiXMark } from 'react-icons/hi2';
 
 function Sidebar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="">
-      {/* Burger button for mobile - absolutely positioned top left */}
-      <button
-        className="btn btn-square btn-ghost fixed top-2 left-2 z-50 lg:hidden"
-        onClick={() => setOpen(!open)}
-        aria-label="Open sidebar"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      {/* Sidebar */}
-      <ul
+
+    <div>
+      {/* Toggle button */}
+      {!open && (
+        <button
+          className="btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 fixed top-2 hover:top-2.5 left-2 z-50 transition-all hidden sm:flex"
+          onClick={() => setOpen(true)}
+          aria-label="Open sidebar"
+        >
+          <HiBars3 size={22} />
+        </button>
+      )}
+
+      {/* Horizontal bar */}
+      <div
         className={`
-          menu bg-base-200 rounded-box w-80 h-screen
           fixed top-0 left-0 z-40 transition-transform duration-200
-          ${open ? 'translate-x-0' : '-translate-x-full'}
-          lg:translate-x-0 lg:fixed lg:top-0 lg:left-0
-          ${open ? '' : 'lg:block'}
+          w-full max-w-xl
+          ${open ? 'translate-y-0' : '-translate-y-full'}
+
         `}
-        style={{ maxWidth: '20rem' }}
-        onClick={() => setOpen(false)}
+        style={{ minWidth: '320px' }}
       >
-        {/* Close button for mobile */}
-        <div className="flex justify-end lg:hidden">
+
+        <div className="flex flex-row items-center bg-white rounded-b-xl shadow-lg px-4 py-2 gap-2 border-b border-gray-200">
+          {/* Close button */}
+
           <button
-            className="btn btn-square btn-ghost m-2"
-            onClick={e => { e.stopPropagation(); setOpen(false); }}
+            className="btn btn-square btn-ghost"
+            onClick={() => setOpen(false)}
             aria-label="Close sidebar"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12" />
-            </svg>
+            <HiXMark size={22} />
           </button>
+          {/* Logo */}
+          <span className="text-2xl font-bold text-indigo-600">FR</span>
+          <span className="text-indigo-400 text-lg font-bold mr-4">estate</span>
+          {/* Links */}
+          <a className="btn btn-ghost flex items-center gap-2" href="/">
+            <HiOutlineHome size={20} />
+            <span className="hidden sm:inline">Home</span>
+          </a>
+          <a className="btn btn-ghost flex items-center gap-2" href="/favourites">
+            <HiOutlineHeart size={20} />
+            <span className="hidden sm:inline">Favourites</span>
+          </a>
+          {/* Feature card as a button */}
+          <a href="/questionnaire" className="btn btn-ghost flex items-center gap-2 ml-auto">
+            <HiSparkles size={20} className="text-indigo-700" />
+            <span className="hidden sm:inline font-bold">AI Matcher</span>
+          </a>
         </div>
-        <li className="menu-title">Title</li>
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
-        <li><a>Item 3</a></li>
-      </ul>
-      {/* Overlay for mobile when sidebar is open */}
+
+      </div>
+      {/* Overlay */}
+
       {open && (
         <div
-          className="fixed inset-0 bg-gray-200 opacity-40 z-30 lg:hidden"
+          className="fixed inset-0 bg-base-300/20 z-30"
           onClick={() => setOpen(false)}
         />
       )}
@@ -60,3 +72,43 @@ function Sidebar() {
 }
 
 export default Sidebar
+    //       <a className="p-3 flex items-center gap-3" href="/">
+    //         <HiOutlineHome size={22} />
+    //         Home
+    //       </a>
+    //     </li>
+    //     <li>
+    //       <a className="p-3 flex items-center gap-3" href="/favourites">
+    //         <HiOutlineHeart size={22} />
+    //         Favourites
+    //       </a>
+    //     </li>
+    //     {/* Removed Houses and Settings menu items */}
+    //     <div className="flex-1" />
+    //     <li className="mb-4 mx-2">
+    //       <div className="card bg-base-200 hover:bg-base-300 transition-all duration-300 rounded-xl p-4 flex flex-col items-start border-1 border-gray-300">
+    //         <a href="/questionnaire" className="w-full flex items-start gap-3">
+    //           <span className="mt-0.5">
+    //             <HiSparkles size={22} className="text-indigo-700" />
+    //           </span>
+    //           <div className="flex-1">
+    //             <div className="font-bold text-base mb-1">New feature available!</div>
+    //             <div className="text-xs text-base-content/70 mb-2">Try our AI-powered property matcher to get instant recommendations tailored for you.</div>
+    //           </div>
+    //         </a>
+    //       </div>
+    //     </li>
+    //   </ul>
+    //   {/* Overlay for when sidebar is open */}
+    //   {open && (
+    //     <div
+    //       className="fixed inset-0 bg-base-300/20 z-30"
+    //       onClick={() => setOpen(false)}
+    //     />
+//     //   )}
+//     // </div>
+//   )
+// }
+
+
+// export default Sidebar
