@@ -3,7 +3,7 @@ import { retrieveTopK } from "../services/retrievalService.js";
 import { generateAnswer } from "../services/LLMService.js";
 import { buildPrompt } from "../services/promptService.js";
 
-export const submitQuestionnaire = async (req, res) => {
+export const submitQuestionaire = async (req, res) => {
     try {
         const userAnswers = req.body;
 
@@ -11,7 +11,7 @@ export const submitQuestionnaire = async (req, res) => {
         const answerText = Object.entries(userAnswers)
             .map(([key, value]) => `- ${key}: ${value}`)
             .join("\n");
-        const queryEmbedding = await getEmbedding(answerText);
+        const queryEmbedding = await getEmbedding("query", userAnswers);
 
         // 2️⃣ Retrieve top 5 properties
         const topDocs = await retrieveTopK(queryEmbedding, 5);
