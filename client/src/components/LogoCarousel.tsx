@@ -1,6 +1,11 @@
 import { motion, animate, useMotionValue } from 'framer-motion'
 import React, { useEffect, useRef, useState } from 'react'
 
+import logo1 from "../assets/aws.svg";
+import logo2 from "../assets/aws-bedrock.svg";
+import logo3 from "../assets/DynamoDB.svg";
+import logo4 from "../assets/nodejs-logo.svg";
+import logo5 from "../assets/react.svg";
 interface CarouselProps {
   src: string;
   alt: string;
@@ -8,17 +13,16 @@ interface CarouselProps {
 }
 
 const logos: CarouselProps[] = [
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
-    { src: "../vite.svg", alt: "OpenAI" },
+    { src: logo1, alt: "AWS" },
+    { src: logo2, alt: "AWS Bedrock" },
+    { src: logo3, alt: "DynamoDB" },
+    { src: logo4, alt: "Node.js" },
+    { src: logo5, alt: "React" },
+    { src: logo1, alt: "AWS" },
+    { src: logo2, alt: "AWS Bedrock" },
+    { src: logo3, alt: "DynamoDB" },
+    { src: logo4, alt: "Node.js" },
+    { src: logo5, alt: "React" },
     
 ]
 

@@ -8,11 +8,6 @@ import Tinder from './pages/Tinder'
 import Favourites from './pages/Favourites'
 import Details from './pages/Details'
 import Home from './pages/Home'
-import Questionnaire from './pages/Questionnaire'
-import Error from './pages/Error'
-import Tinder from './pages/Tinder'
-import FavouriteList from './pages/Favourites'
-import Landing from './pages/landing'
 import './App.css'
 
 
