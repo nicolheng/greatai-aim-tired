@@ -6,6 +6,7 @@ import "intro.js/minified/introjs.min.css";
 import Sidebar from '../components/Sidebar'
 import Map from '../components/Map'
 import SwipeCards from "../components/SwipeCards";
+import SetFavButtons from "../components/SetFavButtons";
 import introJs from 'intro.js';
 
 const listings = [
@@ -195,7 +196,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex">
+    <div className="relative w-full h-screen flex overflow-hidden">
       <Sidebar />
       <button className="btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 h-10 w-10 fixed top-15 left-2 z-5 hover:top-15.5 transition-all" onClick={startTutorial}>
         <FaQuestion />
@@ -203,9 +204,10 @@ const Home = () => {
       <div className="flex-1 h-full w-full">
         <Map newLocation={newLocation} isIdle={isIdle} setZoom={16.00} />
 
-        <div className="absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 p-6">
+        <div className="absolute top-0 right-10 h-full w-[32rem] max-w-full z-10">
           <SwipeCards listings={listings} onCardClick={handleClick} />
           {/* <Cards listings={listings} onCardClick={handleClick} /> */}
+        
         </div>
       </div>
     </div>

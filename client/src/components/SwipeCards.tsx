@@ -66,6 +66,7 @@ function SwipeCards({listings,onCardClick}: SwipeCardProps) {
   const [animating, setAnimating] = useState(false)
   const [showNext, setShowNext] = useState(false)
   const [swipeResult, setSwipeResult] = useState<null | 'left' | 'right'>(null)
+  const [outDirection, setOutDirection] = useState<'left' | 'right' | null>(null)
   const cardRef = useRef<HTMLDivElement | null>(null)
 
   const MAX_ANGLE = 30
@@ -106,26 +107,16 @@ function SwipeCards({listings,onCardClick}: SwipeCardProps) {
       setSwipeResult(null)
       return
     }
-    if (drag.x > threshold) {
-      setSwipeResult('right')
-      if (!drag.isDragging){
-        animateOut('right')
-      }
-    } else if (drag.x < -threshold) {
-      setSwipeResult('left')
-      if (!drag.isDragging){
-        animateOut('left')
-      }
-    } else {
-      setDrag({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 })
-      setSwipeResult(null)
-    }
+    const direction = drag.x > threshold ? 'right' : 'left'
+    setOutDirection(direction)
+    animateOut(direction)
   }
 
 
 
   // Animate next card sliding up
   const animateOut = (direction: 'left' | 'right') => {
+    setOutDirection(direction)
     setAnimating(true)
     setShowNext(true)
     setTimeout(() => {
@@ -134,6 +125,7 @@ function SwipeCards({listings,onCardClick}: SwipeCardProps) {
       setAnimating(false)
       setShowNext(false)
       setSwipeResult(null)
+      setOutDirection(null)
     }, 350)
   }
 
@@ -144,7 +136,7 @@ function SwipeCards({listings,onCardClick}: SwipeCardProps) {
   const fifthCard = cards[4]
 
   return (
-    <div className="cards relative w-[350px] h-[480px] mx-auto mt-10 select-none">
+    <div className="cards relative w-[350px] h-[480px] mx-auto mt-10 p-6 select-none">
       {cards.length === 0 && (
         <div className="absolute inset-0 flex items-center justify-center bg-base-200 rounded-2xl shadow-lg">
           <span className="text-lg text-base-content/60">No more cards</span>
@@ -207,7 +199,11 @@ function SwipeCards({listings,onCardClick}: SwipeCardProps) {
           ref={cardRef}
           className={`absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl shadow-2xl z-10 border border-base-300 cursor-grab transition-transform duration-200 ${animating ? 'pointer-events-none' : ''}`}
           style={{
-            transform: `translateX(${drag.x}px) rotate(${drag.y/12}deg)`,
+            transform: outDirection
+              ? `translateX(${outDirection === 'right' ? '8rem' : '-8rem'}) rotate(${outDirection === 'right' ? MAX_ANGLE : -MAX_ANGLE}deg) scale(0.5)`
+              : `translateX(${drag.x}px) rotate(${drag.x/10}deg) scale(1)`,
+            transition: animating ? 'transform 0.35s ease-out' : undefined,
+            transformOrigin: '50% 100%',
             zIndex: 2,
           }}
           onClick={() => onCardClick(topCard.coords)}
@@ -263,12 +259,26 @@ function SwipeCards({listings,onCardClick}: SwipeCardProps) {
             </div>
           </div>
             {/* Overlay icons for swipe direction only after drag ends */}
-            {swipeResult === 'right' && (
-              <div className="absolute w-full h-full items-center justify-center text-green-500 text-7xl font-bold bg-red-500 opacity-100">♥</div>
-            )}
-            {swipeResult === 'left' && (
-              <div className="absolute w-full h-full items-center justify-center text-red-500 text-7xl font-bold bg-gray-500 opacity-100">🗑️</div>
-            )}
+            {(() => {
+              const currentDirection = outDirection || swipeResult || (drag.isDragging && Math.abs(drag.x) >20 ? (drag.x > 0 ? 'right' : 'left') : null);
+              const overlayOpacity = animating ? 1 : Math.min(Math.abs(drag.x) / 100, 1);
+              return (
+                <>
+                {currentDirection === 'right' && (
+                  <div className="absolute top-10 right-10 bg-green-200 rounded-full shadow-lg rotate-[-15deg] p-6"
+                  style={{ opacity: overlayOpacity }}>
+                    ♥
+                  </div>
+                )}
+                {currentDirection === 'left' && (
+                  <div className="absolute top-10 left-10 bg-red-200 rounded-full shadow-lg rotate-[15deg] p-6"
+                  style={{ opacity: overlayOpacity }}>
+                    🗑️
+                  </div>
+                )}
+                </>
+              );
+            }) ()}
         </div>
       )}
     </div>
