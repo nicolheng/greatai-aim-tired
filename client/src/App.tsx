@@ -8,6 +8,10 @@ import Tinder from './pages/Tinder'
 import Favourites from './pages/Favourites'
 import Details from './pages/Details'
 import Home from './pages/Home'
+import Questionnaire from './pages/Questionnaire'
+import Error from './pages/Error'
+import Tinder from './pages/Tinder'
+import FavouriteList from './pages/Favourites'
 import './App.css'
 
 
@@ -48,6 +52,7 @@ function App() {
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/tinder" element={<Tinder />} />
         <Route path="/details/:id" element={<Details />} />
+
       </Routes>
     </Router>
   )

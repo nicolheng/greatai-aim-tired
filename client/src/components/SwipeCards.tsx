@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { HiHeart } from 'react-icons/hi2';
 import { HiOutlineTrash } from "react-icons/hi";
 import { HiChevronUp, HiChevronDown } from 'react-icons/hi2';
+import { HiArrowPath } from 'react-icons/hi2'; // add
+import { Link } from 'react-router-dom';
 
 type Listing = {
   id: number;
@@ -169,7 +171,32 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
         <div className={`md:block ${isMinimized ? 'hidden' : 'block'}`}>
           {cards.length === 0 && (
             <div className="absolute inset-0 flex items-center justify-center bg-base-200 rounded-2xl shadow-lg">
-              <span className="text-lg text-base-content/60">No more cards</span>
+              {/* Favourites vs Retake with responsive divider and full height */}
+              <div className="flex w-full h-full flex-col p-6 gap-4">
+                <Link
+                  to="/favourites"
+                  className="card bg-base-100 rounded-box grid place-items-center flex-1 hover:bg-base-200 transition"
+                  aria-label="Go to favourites"
+                >
+                  <div className="flex flex-col items-center gap-2">
+                    <HiHeart className="w-8 h-8 text-rose-600" />
+                    <span className="font-semibold">Go to Favourites</span>
+                  </div>
+                </Link>
+
+                <div className="divider my-0">OR</div>
+
+                <Link
+                  to="/questionnaire"
+                  className="card bg-base-100 rounded-box grid place-items-center flex-1 hover:bg-base-200 transition"
+                  aria-label="Retake questionnaire"
+                >
+                  <div className="flex flex-col items-center gap-2">
+                    <HiArrowPath className="w-8 h-8 text-blue-600" />
+                    <span className="font-semibold">Retake Questionnaire</span>
+                  </div>
+                </Link>
+              </div>
             </div>
           )}
           {nextCard && (
@@ -287,6 +314,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                     <div key={tag} className="badge badge-outline">{tag}</div>
                   ))}
                 </div>
+
               </div>
                 {/* Overlay icons for swipe direction only after drag ends */}
                 {(() => {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import QuestionaireRoadmap from '../components/QuestionaireRoadmap'
 import Sidebar from '../components/Sidebar'
+
 import Dock from '../components/Dock';
 
 function Questionnaire() {
@@ -21,6 +22,7 @@ function Questionnaire() {
     {
       label: 'Living Arrangement?',
       subQuestions: [
+
         {
           label: 'Living arrangement?',
           content: (
@@ -38,11 +40,13 @@ function Questionnaire() {
                   {option}
                 </label>
               ))}
+
             </div>
           ),
         },
         {
           label: 'Number of people?',
+
           content: (
             <input
               className="input input-bordered w-full"
@@ -52,6 +56,7 @@ function Questionnaire() {
               onChange={e => setAnswers(a => ({ ...a, numPeople: e.target.value }))}
             />
           ),
+
         },        
       ],
     },
@@ -62,6 +67,7 @@ function Questionnaire() {
           label: 'Do you cook?',
           content: (
             <div className="grid grid-cols-2 gap-4">
+
               {['Yes', 'No'].map(option => (
                 <label key={option} className={`btn btn-outline h-16 sm:h-20 w-full flex items-center justify-center cursor-pointer ${answers.doYouCook === option ? 'btn-active' : ''}`}>
                   <input
@@ -82,6 +88,7 @@ function Questionnaire() {
           label: 'Do you want somewhere quiet?',
           content: (
             <div className="grid grid-cols-2 gap-4">
+
               {['Yes', 'No'].map(option => (
                 <label key={option} className={`btn btn-outline h-16 sm:h-20 w-full flex items-center justify-center cursor-pointer ${answers.wantQuiet === option ? 'btn-active' : ''}`}>
                   <input
@@ -95,6 +102,7 @@ function Questionnaire() {
                   {option}
                 </label>
               ))}
+
             </div>
           ),
         },
@@ -105,6 +113,7 @@ function Questionnaire() {
       subQuestions: [
         {
           label: 'Preferred location?',
+
           content: (
             <input
               className="input input-bordered w-full"
@@ -113,6 +122,7 @@ function Questionnaire() {
               onChange={e => setAnswers(a => ({ ...a, preferredLocation: e.target.value }))}
             />
           ),
+
         },
       ],
     },
@@ -121,6 +131,7 @@ function Questionnaire() {
       subQuestions: [
         {
           label: 'Price range?',
+
           content: (
             <input
               className="input input-bordered w-full"
@@ -137,6 +148,7 @@ function Questionnaire() {
       subQuestions: [
         {
           label: 'Facilities you may need?',
+
           content: (
             <input
               className="input input-bordered w-full"
@@ -145,6 +157,7 @@ function Questionnaire() {
               onChange={e => setAnswers(a => ({ ...a, facilities: e.target.value }))}
             />
           ),
+
         },
       ],
     },
@@ -155,6 +168,7 @@ function Questionnaire() {
           label: 'Landed or high-rise?',
           content: (
             <div className="grid grid-cols-2 gap-4">
+
               {['Landed', 'High-rise'].map(option => (
                 <label key={option} className={`btn btn-outline h-16 sm:h-20 w-full flex items-center justify-center cursor-pointer ${answers.landedOrHighRise === option ? 'btn-active' : ''}`}>
                   <input
@@ -168,6 +182,7 @@ function Questionnaire() {
                   {option}
                 </label>
               ))}
+
             </div>
           ),
         },
@@ -197,36 +212,42 @@ function Questionnaire() {
   }
 
   return (
+
     <div className="min-h-screen w-full flex flex-col sm:flex-row bg-base-200">
       <Sidebar />
       <Dock/>
       {/* Roadmap/Sidebar */}
       <div className="w-full sm:w-1/3 bg-base-200 p-4 sm:p-10 flex flex-col justify-center">
         <div>
-          <div className="font-bold text-lg mb-2 ">Site Name Bro</div>
+          <div className="font-bold text-lg mb-2 ">FRestate</div>
+
           <h2 className="text-2xl font-bold mb-2">Find your perfect home</h2>
           <p className="text-base-content/70 mb-8">Answer a few questions to help us recommend the best property for you.</p>
           <QuestionaireRoadmap currentStep={mainStep} />
         </div>
       </div>
       {/* Main Content */}
+
       <div className="flex-1 flex flex-col justify-center items-center px-2 py-4 sm:px-10 sm:py-8 bg-base-100 overflow-auto pb-20">
         <div className="w-full max-w-xl sm:max-w-2xl">
           <div key={fadeKey} className="animate-fadein">
             {currentMain.subQuestions.map((sub, idx) => (
               <div className="mb-8" key={idx}>
                 <div className="text-base sm:text-lg font-semibold mb-2">{sub.label}</div>
+
                 {sub.content}
               </div>
             ))}
           </div>
           {/* Navigation buttons only appear once here */}
+
           <div className="flex flex-col sm:flex-row justify-between gap-4 mt-8">
             <button className="btn bg-base-100 w-full sm:w-auto" disabled={isFirst} onClick={handleBack}>Back</button>
             {isLast ? (
               <button className="btn btn-primary w-full sm:w-auto" onClick={() => {window.location.href = '/tinder';}}>Finish</button>
             ) : (
               <button className="btn btn-base-300 w-full sm:w-auto" onClick={handleNext}>Next</button>
+
             )}
           </div>
         </div>
