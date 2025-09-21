@@ -1,0 +1,2555 @@
+[
+  {
+    "buildingFacilities": [
+      {
+        "code": "22",
+        "description": {
+          "en-GB": "Parking"
+        }
+      },
+      {
+        "code": "5",
+        "description": {
+          "en-GB": "24-hours security"
+        }
+      }
+    ],
+    "isSA": false,
+    "attributes": {
+      "landArea": "16,000",
+      "furnishing": "Partly Furnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "titleType": "Strata",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=CYnPYpglMpE1",
+      "buildingId": 1840
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f146ce9346704255a85c8e4ff5ca4fa5.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/f146ce9346704255a85c8e4ff5ca4fa5.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f146ce9346704255a85c8e4ff5ca4fa5.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Apartment",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "2604",
+        "type": "agency",
+        "name": "INTEREALTOR SDN. BHD.",
+        "logo": {
+          "type": "image",
+          "url": "https://images-my.ippstatic.com/images/searchresult/agencybrandlogo/a6c13ccf455b413c9106f245d28d772c.png",
+          "thumbnailUrl": "https://images-my.ippstatic.com/images/searchresult/agencybrandlogo/a6c13ccf455b413c9106f245d28d772c.png",
+          "mimeType": "image/jpeg"
+        },
+        "color": "#06408b",
+        "contact": {
+          "phones": [
+            {
+              "number": "+6042881888",
+              "label": "phone"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Penang",
+        "level2": "Pulau Tikus",
+        "level3": "Isabelle Villa"
+      },
+      "ms-MY": {
+        "level1": "Penang",
+        "level2": "Pulau Tikus",
+        "level3": "Isabelle Villa"
+      }
+    },
+    "id": "sale-4377301",
+    "listers": [
+      {
+        "id": "12832",
+        "type": "agent",
+        "name": "Margaret Beh",
+        "license": "REN 06168",
+        "website": "https://www.iproperty.com.my/property-agent/margaret-beh-12832",
+        "image": {
+          "type": "image",
+          "url": "https://pictures-my.ippstatic.com/realtors/images/agent/625015367eca484ea1b53f1ca59fec45.jpg",
+          "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/agent/625015367eca484ea1b53f1ca59fec45.jpg",
+          "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/agent/625015367eca484ea1b53f1ca59fec45.jpg",
+          "mimeType": "image/jpeg"
+        },
+        "contact": {
+          "phones": [
+            {
+              "number": "+60124009111",
+              "label": "mobile"
+            },
+            {
+              "number": "+60124009111",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/pulau-tikus/isabelle-villa/sale-4377301/",
+    "tier": 3,
+    "address": {
+      "formattedAddress": "Tanjung Tokong, Penang, Pulau Tikus, Penang",
+      "lat": 5.431389,
+      "lng": 100.304444,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f146ce9346704255a85c8e4ff5ca4fa5.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/f146ce9346704255a85c8e4ff5ca4fa5.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f146ce9346704255a85c8e4ff5ca4fa5.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f7645f4b1ab54639b04c3b4f6ece3ecc.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/f7645f4b1ab54639b04c3b4f6ece3ecc.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f7645f4b1ab54639b04c3b4f6ece3ecc.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/59a2681bc1b1435c9de3179de7566f5e.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/59a2681bc1b1435c9de3179de7566f5e.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/59a2681bc1b1435c9de3179de7566f5e.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/10e4ee01079d4f219dd1636bd6a226a7.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/10e4ee01079d4f219dd1636bd6a226a7.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/10e4ee01079d4f219dd1636bd6a226a7.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/fc5326c8a2fe43d3b9a4715cf67cb02c.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/fc5326c8a2fe43d3b9a4715cf67cb02c.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/fc5326c8a2fe43d3b9a4715cf67cb02c.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/5113efeda1b84b7fac68d0316da2b989.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/5113efeda1b84b7fac68d0316da2b989.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/5113efeda1b84b7fac68d0316da2b989.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/2a35f94ecade4d01a6596d32147f98c2.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/2a35f94ecade4d01a6596d32147f98c2.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/2a35f94ecade4d01a6596d32147f98c2.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/ef0c4f5d2df04a28897402991632cc5b.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/ef0c4f5d2df04a28897402991632cc5b.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/ef0c4f5d2df04a28897402991632cc5b.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/018d0dfa762849a08dd4700fa082099d.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/018d0dfa762849a08dd4700fa082099d.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/018d0dfa762849a08dd4700fa082099d.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f4e9c3eaf8434412a0febcf9ed32188e.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/f4e9c3eaf8434412a0febcf9ed32188e.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/f4e9c3eaf8434412a0febcf9ed32188e.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/a4674f886861466ca5f18b24cf0b28f8.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/a4674f886861466ca5f18b24cf0b28f8.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/a4674f886861466ca5f18b24cf0b28f8.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/50fc4e5894d248e39a0494cc95ae44fc.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/50fc4e5894d248e39a0494cc95ae44fc.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/50fc4e5894d248e39a0494cc95ae44fc.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/c2788d78602944b6a395525006a5b5a2.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/c2788d78602944b6a395525006a5b5a2.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/c2788d78602944b6a395525006a5b5a2.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/46c5dc960ff24b9194c8204771ff33c0.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/46c5dc960ff24b9194c8204771ff33c0.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/46c5dc960ff24b9194c8204771ff33c0.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/8512a7eb5300422e99227690333e9acd.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/8512a7eb5300422e99227690333e9acd.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/8512a7eb5300422e99227690333e9acd.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/b37dd183c8ac49e2b9bc39b2ac467f5f.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/b37dd183c8ac49e2b9bc39b2ac467f5f.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/b37dd183c8ac49e2b9bc39b2ac467f5f.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/457f549dddfd4683a59efcfa176a02af.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/457f549dddfd4683a59efcfa176a02af.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/457f549dddfd4683a59efcfa176a02af.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/12832/7e1cde7296ed4cfea58dd41351648055.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/12832/7e1cde7296ed4cfea58dd41351648055.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/12832/7e1cde7296ed4cfea58dd41351648055.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP4377301",
+    "updatedAt": "2020-06-03T03:23:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 14000000,
+        "max": 14000000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Island Hospital",
+        "Gleneagles Penang",
+        "Loh Guan Lye Specialists Centre",
+        "Hospital Lam Wah Ee",
+        "Georgetown Specialist Hospital"
+      ],
+      "education.school": [
+        "Chung Ling (Private) High School",
+        "Chung Ling High School",
+        "Langkawi Coral",
+        "Han Chiang High School",
+        "Penang Free School"
+      ],
+      "public_transport": [
+        "Swettenham Pier Cruise Terminal",
+        "Pangkalan Raja Tun Uda",
+        "Lower Station",
+        "Pasar Kampung Baru",
+        "Church Street Pier"
+      ],
+      "leisure.park": [
+        "Penang Botanic Gardens",
+        "Taman Bandar Arkeologi Sia Boey",
+        "Gurney Bay Phase 1",
+        "Padang Kota Lama",
+        "Ayer Itam War Memorial Park"
+      ],
+      "commercial.shopping_mall": [
+        "Gurney Paragon Mall",
+        "Straits Quay",
+        "1st Avenue Mall",
+        "Island 88",
+        "Plaza Gurney"
+      ]
+    },
+    "postedAt": "2020-06-03T03:23:00Z",
+    "channels": {},
+    "description": "Isabelle Villa Apartment - Whole Building FOR SALE :\r\nLocated @ Prime Location - Pulau Tikus.\r\nTotal units : 8\r\nTotal level : 4th Floor\r\nEach Floor Consist of 2 units.(each unit Build up size : 1872 sqft)\r\nRooftop has build 2 office Penthouse\r\n\r\nPlease contact me for more information.",
+    "title": "Isabelle Villa, Pulau Tikus"
+  },
+  {
+    "isSA": false,
+    "attributes": {
+      "bedroom": "8",
+      "bathroom": "6",
+      "landArea": "70x70",
+      "carPark": "4",
+      "furnishing": "Partly furnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "unitType": "Corner lot",
+      "occupancy": "Vacant",
+      "titleType": "Individual",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=UKn_pOy0SjOLaPmi39kiRw2"
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://img.rea-asia.com/my-iproperty-original/36379_c3d35166570a4eecb00bee1f877d2849.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/36379_c3d35166570a4eecb00bee1f877d2849.jpg",
+      "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/36379_c3d35166570a4eecb00bee1f877d2849.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Bungalow",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "50637",
+        "type": "agency",
+        "name": "Gather Properties Sdn Bhd (Perak)",
+        "contact": {
+          "phones": [
+            {
+              "number": "+6052556368",
+              "label": "phone"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Perak",
+        "level2": "Ipoh"
+      },
+      "ms-MY": {
+        "level1": "Perak",
+        "level2": "Ipoh"
+      }
+    },
+    "id": "sale-100252516",
+    "listers": [
+      {
+        "id": "604520",
+        "type": "agent",
+        "name": "Rexmond Wong",
+        "jobTitle": "Real Estate Negotiator",
+        "license": "REN 27481",
+        "website": "https://www.iproperty.com.my/property-agent/rexmond-wong-36379",
+        "description": "BUY/SELL/RENT - COMMERCIAL/INDUSTRIAL/RESIDENTAL/LAND\nFB Page : RexmondW Properties Hub\nContact No. : 010-2883893\nSpecialize in Commercial and Industrial, Decent in Residential.\n\nDear all, my aim is to provide you, my esteem clients, a friendly and effective platform which brings you a greater experience in looking for your desire properties.\nJust drop me a message regarding the criteria of properties that you have been searching.\nWe shall return to you with what you want within 24 hours.\nServing you with the right attitude is our priorities!!",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60102883893",
+              "label": "phone"
+            },
+            {
+              "number": "60102883893",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/ipoh/sale-100252516/",
+    "tier": 1,
+    "address": {
+      "formattedAddress": "Taman Sinfar, Pasir Puteh, Ipoh, Perak",
+      "lat": 4.566677,
+      "lng": 101.076913,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/36379_c3d35166570a4eecb00bee1f877d2849.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/36379_c3d35166570a4eecb00bee1f877d2849.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/36379_c3d35166570a4eecb00bee1f877d2849.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/36379_efb26613d27541dcaeb028072b203654.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/36379_efb26613d27541dcaeb028072b203654.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/36379_efb26613d27541dcaeb028072b203654.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/36379_3ca3dea9fe754ffda77eadf875ec9ea0.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/36379_3ca3dea9fe754ffda77eadf875ec9ea0.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/36379_3ca3dea9fe754ffda77eadf875ec9ea0.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "100252516",
+    "updatedAt": "2020-05-22T15:00:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 900000,
+        "max": 900000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Hospital Raja Permaisuri Bainun",
+        "KPJ Ipoh Specialist Hospital",
+        "Pusat Perubatan Kinta",
+        "Hospital Pakar Komuniti Perak",
+        "Ar-Ridzuan Medical Center"
+      ],
+      "education.school": [
+        "Shen Jai High School 怡保深斋中学",
+        "Sekolah Menengah Jenis Kebangsaan Sam Tet",
+        "Sekolah Jenis Kebangsaan (Cina) Sam Tet",
+        "SJK(C) Perak 霹雳华小",
+        "Sekolah Menengah Kebangsaan Raja Perempuan"
+      ],
+      "public_transport": [
+        "Ipoh",
+        "Lahat",
+        "Kamdar Jalan Raja Musa Aziz",
+        "CIMB Bank Greentown",
+        "Sam Poh Tong Temple"
+      ],
+      "leisure.park": [
+        "Taman D.R Seenivasagam",
+        "Dataran Ipoh",
+        "Ipoh Padang",
+        "Padang Kilat",
+        "Sultan Abdul Aziz Park (Polo Ground)"
+      ],
+      "commercial.shopping_mall": [
+        "Ipoh Parade",
+        "AEON Ipoh Falim",
+        "Aeon Station 18",
+        "Angsana Mall Ipoh",
+        "Wisma Kinta"
+      ]
+    },
+    "postedAt": "2020-05-22T15:00:00Z",
+    "channels": {},
+    "description": "URGENT! OWNER WANT TO LET GO FAST! BELOW MARKET VALUE!\r\nSAME AREA, SAME UNIT, SAME SIZE IS SELLING AT RM1.3m\r\nTHIS IS JUST SELLING AT RM900,000\r\n\r\nFREEHOLD Three Storey Bungalow Corner House\r\nLocated at Taman Sinfar, Pasir Puteh, Ipoh.\r\nLand size : 70x70\r\n8 bedrooms 6 washrooms\r\nFREEHOLD title\r\n\r\nSelling price : RM900,000\r\n\r\nFYI, SAME SIZE, SAME CORNER HOUSE, AT THE SAME AREA IS SELLING AT RM1.3 MILLION\r\n\r\nFor viewing appointments, or for more enquiries,\r\nPlease Whatsapp or call me @ 010-2883893 RexmondW",
+    "title": "Taman Sinfar, Pasir Puteh, Ipoh, Ipoh"
+  },
+  {
+    "buildingFacilities": [
+      {
+        "code": "22",
+        "description": {
+          "en-GB": "Parking"
+        }
+      },
+      {
+        "code": "23",
+        "description": {
+          "en-GB": "Jogging track"
+        }
+      },
+      {
+        "code": "11",
+        "description": {
+          "en-GB": "Playground"
+        }
+      },
+      {
+        "code": "5",
+        "description": {
+          "en-GB": "24-hours security"
+        }
+      }
+    ],
+    "isSA": false,
+    "attributes": {
+      "bedroom": "6",
+      "bathroom": "7",
+      "landArea": "4,500",
+      "builtUp": "5,466",
+      "carPark": "3",
+      "furnishing": "Unfurnished",
+      "landTitleType": "Residential",
+      "tenure": "Leasehold",
+      "facingDirection": "Unknown",
+      "unitType": "Intermediate",
+      "occupancy": "Vacant",
+      "titleType": "Unknown",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=THIkCIX6FQw1"
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/af62cbcc796248398a34b991f2770115.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/af62cbcc796248398a34b991f2770115.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/af62cbcc796248398a34b991f2770115.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Bungalow",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "207",
+        "type": "agency",
+        "name": "Private Advertiser",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60392225796",
+              "label": "phone"
+            },
+            {
+              "number": " 60392215791",
+              "label": "fax"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Selangor",
+        "level2": "Shah Alam"
+      },
+      "ms-MY": {
+        "level1": "Selangor",
+        "level2": "Shah Alam"
+      }
+    },
+    "id": "sale-8052968",
+    "listers": [
+      {
+        "id": "39725",
+        "type": "agent",
+        "name": "Casey",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60163280166",
+              "label": "mobile"
+            },
+            {
+              "number": "+60163280166",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/shah-alam/sale-8052968/",
+    "tier": 3,
+    "address": {
+      "formattedAddress": "Perdana Height U10 , Selangor",
+      "lat": 3.073281,
+      "lng": 101.518461,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/af62cbcc796248398a34b991f2770115.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/af62cbcc796248398a34b991f2770115.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/af62cbcc796248398a34b991f2770115.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/10d85a37b45d46c18fbe7cce8df6a6b3.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/10d85a37b45d46c18fbe7cce8df6a6b3.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/10d85a37b45d46c18fbe7cce8df6a6b3.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/9cc27ff37993454ab275908d94c2b8fd.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/9cc27ff37993454ab275908d94c2b8fd.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/9cc27ff37993454ab275908d94c2b8fd.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/c712912a76b04a9f82ce8c580101e689.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/c712912a76b04a9f82ce8c580101e689.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/c712912a76b04a9f82ce8c580101e689.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/1ae031efe1544bb5826f2896ab0c500e.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/1ae031efe1544bb5826f2896ab0c500e.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/1ae031efe1544bb5826f2896ab0c500e.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/5b29b2c39379460285701788529098f4.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/5b29b2c39379460285701788529098f4.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/5b29b2c39379460285701788529098f4.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/39725/63ac46532f384ada887a25e8bf7da8c1.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/39725/63ac46532f384ada887a25e8bf7da8c1.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/39725/63ac46532f384ada887a25e8bf7da8c1.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP8052968",
+    "updatedAt": "2020-06-03T03:43:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 1800000,
+        "max": 1800000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "SALAM Shah Alam Specialist Hospital",
+        "Klinik Dr Rosli Seksyen 7 Shah Alam",
+        "Avisena Specialist Hospital",
+        "Hospital Shah Alam",
+        "Klinik Mediviron"
+      ],
+      "education.school": [
+        "Sekolah Jenis Kebangsaan (Tamil) Ladang Midlands",
+        "SK Seksyen 19",
+        "Kolej Vokasional Shah Alam",
+        "Tenby Schools Setia Eco Park",
+        "SJK (T) Sungai Rengam"
+      ],
+      "public_transport": [
+        "KD11 Shah Alam",
+        "KD12 Padang Jawa",
+        "KD10 Batu Tiga",
+        "Hentian Bas 5",
+        "Kompleks PKNS"
+      ],
+      "leisure.park": [
+        "Taman Botani Negara Shah Alam",
+        "Dataran Shah Alam",
+        "Maya Park",
+        "D Kayangan Park",
+        "Taman Rekreasi Permai"
+      ],
+      "commercial.shopping_mall": [
+        "Central i-City",
+        "SACC Mall",
+        "Plaza Shah Alam",
+        "Kompleks PKNS",
+        "Anggerik Mall"
+      ]
+    },
+    "postedAt": "2020-06-03T03:43:00Z",
+    "channels": {},
+    "description": "Brand New Luxury 2 & 3 Storey Bungalow @ Shah Alam \r\n- From RM 1.9 million \r\n- RM 5,000 Booking Fee \r\n- Free S&P Legal Fees \r\n- Free Alarm System\r\n- Free Water Heater Property Details \r\n- Land Size: 50' x 90' & 60' x 90' \r\n- Built Up: 5,266 sq.ft. & 4,219 sq.ft. \r\n- 6 Bedrooms - 7 Bathrooms - Individual Title \r\n- 22' Double Volume Ceiling Height \r\n- 24 hour Security Gated & Guarded \r\n- Top Floor Recreation Lounge \r\nStrategy Location: \r\n- 5 Minutes to Subang \r\n- 5 Minutes to Setia Alam \r\n- 5 Minutes to Ara Damansara \r\n- 5 Minutes to Shah Alam Town \r\n- 10 Minutes to Klang Town \r\n- 20 Minutes to 1 Utama \r\n- 10 min go Giant \r\n- 15 min to Setia City Mall\r\n- Next to Monterez Golf Club\r\n- Education Centers \r\nEasy Access Via: \r\n- Federal Highway\r\n- LATAR Highway \r\n- Guthrie Corridor Expressway\r\n- West Coast Expressway \r\n- New Klang Valley Expressway NKVE \r\n- Damansara Puchong Expressway LDP \r\n- Direct Connectivity DASH Highway (expected completion date 2019) Nearby Conveniences & Amenities\r\n-MARA College, \r\n-School \r\n-Commercial area like grocery, bank, restaurants No one can miss the presence just nearby the most prominent landmark; the Puncak Perdana branch campus of University Teknologi Malaysia (UiTM). Besides that amenity,within its premises, and it is only about 5 minutes away from Bukit Jelutong & Monterez Golf Club. The approved Damansara - Shah Alam Highway (DASH) will link Puncak Heights with Alam Suria, Denai Alam, Kampung Melayu Subang, Jalan Sungai Buloh, RRIM, Kota Damansara, Damansara Perdana and Mutiara Damansara. The expressway will end at the Penchala Interchange, linking it to the Damansara\r\n- Puchong and Sprint Expressways. Guthrie Corridor Highway can also be found within 3 minutes drive away. The amazing thing of residing in a peaceful area residents will get the opportunity to stroll along tranquil trail and enjoy the cool evening breeze. Investors does not have to fret as the property gives good value for capital appreciation. It has great investment potential being in a developing residential district of Shah Alam.",
+    "title": "Perdana Height U10 , Shah Alam"
+  },
+  {
+    "buildingFacilities": [
+      {
+        "code": "21",
+        "description": {
+          "en-GB": "BBQ"
+        }
+      },
+      {
+        "code": "22",
+        "description": {
+          "en-GB": "Parking"
+        }
+      },
+      {
+        "code": "23",
+        "description": {
+          "en-GB": "Jogging track"
+        }
+      },
+      {
+        "code": "27",
+        "description": {
+          "en-GB": "Mini market"
+        }
+      },
+      {
+        "code": "11",
+        "description": {
+          "en-GB": "Playground"
+        }
+      },
+      {
+        "code": "5",
+        "description": {
+          "en-GB": "24-hours security"
+        }
+      }
+    ],
+    "isSA": false,
+    "attributes": {
+      "bedroom": "4",
+      "bathroom": "2",
+      "landArea": "4,250",
+      "builtUp": "1,740",
+      "carPark": "4",
+      "furnishing": "Unfurnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "unitType": "Intermediate",
+      "occupancy": "Vacant",
+      "titleType": "Individual",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=XCI6aYAtIVM1"
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/33766/91cb430d86904f67a7c8cb29be3606e0.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/33766/91cb430d86904f67a7c8cb29be3606e0.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/33766/91cb430d86904f67a7c8cb29be3606e0.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Bungalow",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "2484",
+        "type": "agency",
+        "name": "Vivahomes Realty Sdn. Bhd. - Seremban",
+        "logo": {
+          "type": "image",
+          "url": "https://images-my.ippstatic.com/images/searchresult/agencybrandlogo/e306cb95298d4356a23b14330b569de3.jfif",
+          "thumbnailUrl": "https://images-my.ippstatic.com/images/searchresult/agencybrandlogo/e306cb95298d4356a23b14330b569de3.jfif",
+          "mimeType": "image/jpeg"
+        },
+        "color": "#80bc00",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60126262869",
+              "label": "phone"
+            },
+            {
+              "number": "+60126262869",
+              "label": "fax"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": true,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Negeri Sembilan",
+        "level2": "Seremban"
+      },
+      "ms-MY": {
+        "level1": "Negeri Sembilan",
+        "level2": "Seremban"
+      }
+    },
+    "id": "sale-7820135",
+    "listers": [
+      {
+        "id": "33766",
+        "type": "agent",
+        "name": "Apple Lau",
+        "license": "REN 34543",
+        "website": "https://www.iproperty.com.my/property-agent/apple-lau-33766",
+        "description": "I specialist in Seremban, Port Dickson, Senawang Area. I'm Covered 80% Project in Seremban Area. Pm me to know more info & detail.",
+        "image": {
+          "type": "image",
+          "url": "https://pictures-my.ippstatic.com/realtors/images/agent/be92797ef41341c1bbc74aa01c498eb3.jpg",
+          "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/agent/be92797ef41341c1bbc74aa01c498eb3.jpg",
+          "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/agent/be92797ef41341c1bbc74aa01c498eb3.jpg",
+          "mimeType": "image/jpeg"
+        },
+        "contact": {
+          "phones": [
+            {
+              "number": "+60182551311",
+              "label": "mobile"
+            },
+            {
+              "number": "+60182551311",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/seremban/sale-7820135/",
+    "tier": 3,
+    "address": {
+      "formattedAddress": "Super Bungalow, Senawang, Seremban, Negeri Sembilan",
+      "hasLatLng": {
+        "BOOL": true
+      },
+      "hideMarker": false,
+      "lat": {
+        "N": "2.723099"
+      },
+      "lng": {
+        "N": "101.9400601"
+      }
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/33766/91cb430d86904f67a7c8cb29be3606e0.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/33766/91cb430d86904f67a7c8cb29be3606e0.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/33766/91cb430d86904f67a7c8cb29be3606e0.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/33766/359232738ce74afcb4fb9b1984533fac.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/33766/359232738ce74afcb4fb9b1984533fac.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/33766/359232738ce74afcb4fb9b1984533fac.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/33766/5440ecab9eed44a7987360dc28b5f406.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/33766/5440ecab9eed44a7987360dc28b5f406.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/33766/5440ecab9eed44a7987360dc28b5f406.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/33766/d1b732b4fa0f49628858d89a0195b67c.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/33766/d1b732b4fa0f49628858d89a0195b67c.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/33766/d1b732b4fa0f49628858d89a0195b67c.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/33766/ae0592931d3749579ababe55b17b9a97.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/33766/ae0592931d3749579ababe55b17b9a97.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/33766/ae0592931d3749579ababe55b17b9a97.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP7820135",
+    "updatedAt": "2020-04-29T16:47:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 545000,
+        "max": 545000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Columbia Asia Hospital",
+        "Ancient Gardens Ayurvedic Centre",
+        "Hospital Tuanku Ja'afar",
+        "KPJ Seremban Specialist Hospital",
+        "NSCMH Medical Centre"
+      ],
+      "education.school": [
+        "SMK St. Paul",
+        "SMK Puteri",
+        "Sekolah Tinggi Chung Hua 芙蓉中华中学",
+        "SJK (C) Chi Hwa 启华华文小学",
+        "SJK (C) Sin Hua"
+      ],
+      "public_transport": [
+        "KB13 Seremban",
+        "Senawang",
+        "Jalan Temiang",
+        "Jalan Rasah",
+        "Terminal 1"
+      ],
+      "leisure.park": [
+        "Kompleks Belia dan Sukan Paroi",
+        "Taman Rekreasi Air Seremban",
+        "Seremban Lake Garden Park",
+        "Taman Orkid Seremban",
+        "Forest Heights Park"
+      ],
+      "commercial.shopping_mall": [
+        "Seremban Prima",
+        "AEON Seremban 2",
+        "Palm Mall",
+        "Terminal 1 Shopping Centre",
+        "Centerpoint Seremban"
+      ]
+    },
+    "postedAt": "2020-04-29T16:47:00Z",
+    "channels": {},
+    "description": "Are you Still Looking Below 1mil Bungalow in KL?\r\n\r\n5XXK 1sty & 7XXK 2sty in @ SEREMBAN SOUTH !!\r\nFrom Project to KL Sungai Besi - 45mins\r\nFrom Project to KLIA - 25mins\r\n\r\nGREEN MOUNTAIN ENVIRONMENT FOR RETIREMENT !!\r\n\r\n-FREE SPA\r\n-FREE LOAN AGREEMENT \r\n\r\n-NEW HIGHWAY 25MIN TO KLIA \r\n-NEW HIGHWAY 40MIN TO KL \r\n\r\n50% SOLD TO KL BUYER \r\nGOVERNMENT LOAN 100%\r\n\r\n1 STOREY BUNGALOW\r\n-NETT RM574K\r\n-LAND AREA : 50x85\r\n-BUILT UP : 1,726 Sqft\r\n-BEDROOM : 4\r\n-BATHROOM : 2\r\n-CEILING HEIGHT : 13 Feet\r\n\r\n2 STOREY BUNGALOW\r\n-NETT RM630K\r\n-LAND AREA : 50x85\r\n-BUILT UP : 3,148 Sqft\r\n-BEDROOM : 6\r\n-BATHROOM : 4\r\n-CEILING HEIGHT : 13 Feet\r\n\r\n-5Min Tesco\r\n-8min Mydin\r\n-15Min Aeon\r\n-3-5Min All Gov. Sekolah\r\n-15Min Gov. Hospital\r\n-3Min KTM Station \r\n-7Min Plus Highway\r\n-10Min Lekas Highway\r\n\r\nINTERESTED_VIEW_SHOWROOM \r\nApple Lau 018-2551311",
+    "title": "Super Bungalow, Senawang, Seremban, Seremban"
+  },
+  {
+    "isSA": false,
+    "attributes": {
+      "bedroom": "2",
+      "bathroom": "2",
+      "builtUp": "650",
+      "carPark": "1",
+      "furnishing": "Fully Furnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=20eNRtlBj081",
+      "buildingId": 6482
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/37163/c22a1aee08ff430b97c40cb14e477a88.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37163/c22a1aee08ff430b97c40cb14e477a88.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37163/c22a1aee08ff430b97c40cb14e477a88.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Apartment",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "766",
+        "type": "agency",
+        "name": "Rina Properties Asia Sdn Bhd (HQ)",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60391012899",
+              "label": "phone"
+            },
+            {
+              "number": " 60391079699",
+              "label": "fax"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Perak",
+        "level2": "Ipoh",
+        "level3": "Residensi Fair Park"
+      },
+      "ms-MY": {
+        "level1": "Perak",
+        "level2": "Ipoh",
+        "level3": "Residensi Fair Park"
+      }
+    },
+    "id": "sale-8441589",
+    "listers": [
+      {
+        "id": "37163",
+        "type": "agent",
+        "name": "Karen Tan",
+        "license": "REN 33191",
+        "website": "https://www.iproperty.com.my/property-agent/karen-tan-37163",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60174839089",
+              "label": "mobile"
+            },
+            {
+              "number": "+60174839089",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/ipoh/residensi-fair-park/sale-8441589/",
+    "tier": 1,
+    "address": {
+      "formattedAddress": "Persiaran Galeri Kepayang 2, Ipoh, 31400, Perak",
+      "lat": 4.605558,
+      "lng": 101.097597,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37163/c22a1aee08ff430b97c40cb14e477a88.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37163/c22a1aee08ff430b97c40cb14e477a88.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37163/c22a1aee08ff430b97c40cb14e477a88.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37163/5c235e43fba8470aa3bfd2b97a06a3af.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37163/5c235e43fba8470aa3bfd2b97a06a3af.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37163/5c235e43fba8470aa3bfd2b97a06a3af.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37163/0b74feb9ef8848459224d19d5c36e2dc.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37163/0b74feb9ef8848459224d19d5c36e2dc.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37163/0b74feb9ef8848459224d19d5c36e2dc.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37163/2b3934997f054c8db4566f38338d701c.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37163/2b3934997f054c8db4566f38338d701c.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37163/2b3934997f054c8db4566f38338d701c.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37163/db92db559cde43f7a215f38a99a89766.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37163/db92db559cde43f7a215f38a99a89766.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37163/db92db559cde43f7a215f38a99a89766.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP8441589",
+    "updatedAt": "2020-05-31T13:55:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 200000,
+        "max": 200000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Hospital Raja Permaisuri Bainun",
+        "Hospital Fatimah",
+        "KPJ Ipoh Specialist Hospital",
+        "Pusat Perubatan Kinta",
+        "Hospital Pakar Komuniti Perak"
+      ],
+      "education.school": [
+        "Sekolah Menengah Jenis Kebangsaan Sam Tet",
+        "Sekolah Jenis Kebangsaan (Cina) Sam Tet",
+        "SJK(C) Perak 霹雳华小",
+        "Sekolah Kebangsaan Tambun",
+        "Sekolah Menengah Kebangsaan Raja Perempuan"
+      ],
+      "public_transport": [
+        "Ipoh",
+        "Kamdar Jalan Raja Musa Aziz",
+        "CIMB Bank Greentown",
+        "Sam Poh Tong Temple",
+        "Sam Poh Tong Temple"
+      ],
+      "leisure.park": [
+        "Taman D.R Seenivasagam",
+        "Unmanaged Park",
+        "Dataran Ipoh",
+        "Ipoh Padang",
+        "Padang Kilat"
+      ],
+      "commercial.shopping_mall": [
+        "Aeon Kinta City",
+        "Ipoh Parade",
+        "AEON Ipoh Falim",
+        "Angsana Mall Ipoh",
+        "Glamour Square"
+      ]
+    },
+    "postedAt": "2020-05-31T13:55:00Z",
+    "channels": {},
+    "description": "Serviced Apartment ?? @ #Ipoh City Centre\r\n\r\n#FREEHOLD & #RESIDENTIAL title\r\nPrime #LOCATION & future #LANDMARK\r\n500, 650 & 694 SQ FT\r\nNOT under PR1MA\r\n\r\nAmazing #Facilities\r\nSwimming pool ?? Badminton court\r\nBasketball court \r\nJogging track\r\nGymnasium \r\nYoga deck\r\n\r\n#Amenities nearby\r\n4km to Aeon Kinta City\r\n2km to Ipoh Parade\r\n2km to Stadium Perak\r\n1km to General Hostipal\r\n\r\nSuitable for Own Stay / #Investment \r\n#LOW Downpayment\r\n#HIGH ROI from Short / Long Term #rental\r\n#FREE 1 Carpark\r\n\r\nBooking fees RM 2,000 now to enjoy\r\nEarly Bird #Rebate 8%\r\nFREE #furnished worth up to RM 20,000\r\n\r\nSelling price from RM 156,000\r\n\r\n\r\nplease contact karen tan for viewing 0174839089",
+    "title": "Residensi Fair Park, Ipoh"
+  },
+  {
+    "buildingFacilities": [
+      {
+        "code": "21",
+        "description": {
+          "en-GB": "BBQ"
+        }
+      },
+      {
+        "code": "22",
+        "description": {
+          "en-GB": "Parking"
+        }
+      },
+      {
+        "code": "26",
+        "description": {
+          "en-GB": "Gymnasium"
+        }
+      },
+      {
+        "code": "23",
+        "description": {
+          "en-GB": "Jogging track"
+        }
+      },
+      {
+        "code": "11",
+        "description": {
+          "en-GB": "Playground"
+        }
+      },
+      {
+        "code": "6",
+        "description": {
+          "en-GB": "Swimming pool"
+        }
+      },
+      {
+        "code": "10",
+        "description": {
+          "en-GB": "Tennis court"
+        }
+      },
+      {
+        "code": "5",
+        "description": {
+          "en-GB": "24-hours security"
+        }
+      }
+    ],
+    "isSA": false,
+    "attributes": {
+      "bedroom": "6+1",
+      "bathroom": "8",
+      "landArea": "6,400",
+      "builtUp": "5,600",
+      "carPark": "4",
+      "furnishing": "Partly Furnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "titleType": "Individual",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=Mcg91u_ju1w1"
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/8ebb8167d9d84c75a08bc5f656c65996.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/8ebb8167d9d84c75a08bc5f656c65996.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/8ebb8167d9d84c75a08bc5f656c65996.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Semi-detached House",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "1801",
+        "type": "agency",
+        "name": "Private Advertiser",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60364265166",
+              "label": "phone"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Selangor",
+        "level2": "Ampang"
+      },
+      "ms-MY": {
+        "level1": "Selangor",
+        "level2": "Ampang"
+      }
+    },
+    "id": "sale-8792121",
+    "listers": [
+      {
+        "id": "3712",
+        "type": "agent",
+        "name": "Lee 156",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60123896216",
+              "label": "mobile"
+            },
+            {
+              "number": "+60123896216",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/ampang/sale-8792121/",
+    "tier": 3,
+    "address": {
+      "formattedAddress": "Beverly Heights, ampang, Selangor",
+      "lat": 3.191293,
+      "lng": 101.765499,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/8ebb8167d9d84c75a08bc5f656c65996.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/8ebb8167d9d84c75a08bc5f656c65996.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/8ebb8167d9d84c75a08bc5f656c65996.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/a8d6434d91cd458abfcc314e98abedcb.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/a8d6434d91cd458abfcc314e98abedcb.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/a8d6434d91cd458abfcc314e98abedcb.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/2f53a5554aac4b16bf7e5f18c2683d3b.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/2f53a5554aac4b16bf7e5f18c2683d3b.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/2f53a5554aac4b16bf7e5f18c2683d3b.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/a22fc368bd9b4570906ccaab4fef829b.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/a22fc368bd9b4570906ccaab4fef829b.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/a22fc368bd9b4570906ccaab4fef829b.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/676ac0f8918549d8a289204ef607c652.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/676ac0f8918549d8a289204ef607c652.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/676ac0f8918549d8a289204ef607c652.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/c9fd8e292f6c4f1c80c949c72ed731a6.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/c9fd8e292f6c4f1c80c949c72ed731a6.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/c9fd8e292f6c4f1c80c949c72ed731a6.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/902e958a7777470cab7d8e0a574abe40.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/902e958a7777470cab7d8e0a574abe40.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/902e958a7777470cab7d8e0a574abe40.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/3cfbb76ac2134a8288c87b711a784203.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/3cfbb76ac2134a8288c87b711a784203.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/3cfbb76ac2134a8288c87b711a784203.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/619d03162dfc4e0b82657dd32c3eac6a.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/619d03162dfc4e0b82657dd32c3eac6a.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/619d03162dfc4e0b82657dd32c3eac6a.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/5a430b4134934e92b1ad19e7be684716.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/5a430b4134934e92b1ad19e7be684716.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/5a430b4134934e92b1ad19e7be684716.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/e7080e075731402894b62b87247b2e49.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/e7080e075731402894b62b87247b2e49.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/e7080e075731402894b62b87247b2e49.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/8803b9dfcd5d430a9dcb966c9be80052.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/8803b9dfcd5d430a9dcb966c9be80052.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/8803b9dfcd5d430a9dcb966c9be80052.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/3712/5815603a823f46e4b38ae220fb37b349.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/3712/5815603a823f46e4b38ae220fb37b349.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/3712/5815603a823f46e4b38ae220fb37b349.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP8792121",
+    "updatedAt": "2020-05-22T08:26:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 3000000,
+        "max": 3000000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Hospital Pakar KPJ Ampang Puteri",
+        "Hospital Angkatan Tentera Tuanku Mizan",
+        "Gleneagles Kuala Lumpur",
+        "Pusat Perubatan Nluri",
+        "Ohana Specialist Hospital"
+      ],
+      "education.school": [
+        "International School Of Kuala Lumpur City",
+        "Forte Performing Arts",
+        "SK Wangsa Maju Zon R10",
+        "SK Taman Melawati",
+        "SMK Taman Melawati"
+      ],
+      "public_transport": [
+        "KJ4 Sri Rampai",
+        "KJ3 Wangsa Maju",
+        "KJ6 Jelatek",
+        "KJ5 Setiawangsa",
+        "KJ7 Dato' Keramat"
+      ],
+      "leisure.park": [
+        "Zoo Negara",
+        "Taman Bukit Indah",
+        "Taman Tasik Ampang Hilir",
+        "Taman Permainan Intan Apartments",
+        "Kompleks Sukan Taman Setiawangsa"
+      ],
+      "commercial.shopping_mall": [
+        "Ampang Point",
+        "Datum Jelatek Shopping Centre",
+        "Melawati Mall",
+        "Alpha Angle",
+        "Great Eastern Mall"
+      ]
+    },
+    "postedAt": "2020-05-22T08:26:00Z",
+    "channels": {},
+    "description": "HURRY !!! FAR BELOW MARKET !!!! WITH PRIVATE SWIMMING POOL & PRIVATE LIFT.\r\n\r\nTHE MOST IDEA CORNER CORNER UNIT 3 STY SEMI-D AT BEVERLY HEIGHTS \r\n\r\nTHE BIGGER LAND AREA AT BEVERLY HEIGHTS: 6,400 FT2 WITH 40' SWIMMING POOL\r\n\r\nDEALING DIRECT WITH OWNER\r\n\r\n**PHOTOS ARE ACTUAL UNIT, OPEN FOR VIEWING**\r\n**PROFESSIONAL REAL ESTATE NEGOTIATOR WITH NO FAKE ADVERTISEMENT**\r\n\r\nView to appreciate. VARIOUS UNITS OF CHOICE !\r\n\r\nKindly call Lee @ 012-3896216 for en-query. Your calls is important to us. Thank you.\r\n\r\nBeverly Heights is an affluent,COZY and close to nature luxury residence housing development located in Ampang. \r\n\r\nThe housing area comprises luxury freehold bungalows and semi-detaches. This project by Beverly Heights Development is a reputable, reliable and exclusive gated community with 24 hrs security.\r\n\r\nHouses in Beverly Heights are designed with contemporary taste along with a fully integrated alarm system that includes sensors and CCTV. Their exteriors are simply serene while the insides are of the finest finishes with plaster ceiling cornices, solar heating and centralized vacuum systems.\r\n\r\nIt is located at the suburb part of KL metropolitan area, neighboring to Wangsa Maju, Darul Ehsan Golf Club(KDE), Ampang Hilir (wihich Embassy Zone), Zoo Negara, Ukay Club:\r\n\r\nand the vicinity are :\r\nInternational School - Kuala Lumpur International, Mutiara, Fair View, Saiful International School.\r\n\r\nShopping Complex:\r\n- Great Eastern Mall, Wangsa Walk, KLCC (Suria KLCC)\r\n\r\nImportant Of Emmergency with Gleanegle Hospital & Ampang Puteri Hospital\r\n\r\nBeverly Heights is easily accessible via MRR2 to North South high way, Putra Jaya Hight to Goverment centralist office:\r\n- Ampang Elevated Highway 5 min to KLCC, \r\n- DUKE Highway 20 min to mont Kiara.\r\n\r\nThis is Brand new Semi-D (3-storey) with elevator, swimming pool, renovated with extension, semi-furnished, 6+1 Bedrooms, 8 bathrooms:\r\n\r\nOptions with:\r\n- Land Size min from 3,200 ft2 to 7,000 ft2 (Corner Unit)\r\n- Fully Furnished / partly furnished, \r\n- Swimming Pool or without.\r\n\r\nProperty Details Name:\r\nBeverly Heights Development \r\nAddress: 68000, Ampang, Selangor \r\nType: Semi-D (3-storey) with private lift, pool\r\nMODERN DESIGN \r\nTenure: Freehold \r\nBuilt-up from: 4,950 ft2 \r\nLand area: From 3,200 ft2\r\n\r\nFacilities \r\nMultipurpose hall \r\nReflexology path \r\nSwimming pool \r\nBasketball court \r\nGazebo \r\nGymnasium \r\n\r\nHURRY ! FAR BELOW MARKET !!!\r\nKindly call Lee @ 012-3896216 for en-query. Your calls is important to us. Thank you.\r\nView to appreciate.",
+    "title": "Beverly Heights, ampang, Ampang"
+  },
+  {
+    "buildingFacilities": [
+      {
+        "code": "21",
+        "description": {
+          "en-GB": "BBQ"
+        }
+      },
+      {
+        "code": "25",
+        "description": {
+          "en-GB": "Business centre"
+        }
+      },
+      {
+        "code": "32",
+        "description": {
+          "en-GB": "Cafeteria"
+        }
+      },
+      {
+        "code": "22",
+        "description": {
+          "en-GB": "Parking"
+        }
+      },
+      {
+        "code": "26",
+        "description": {
+          "en-GB": "Gymnasium"
+        }
+      },
+      {
+        "code": "23",
+        "description": {
+          "en-GB": "Jogging track"
+        }
+      },
+      {
+        "code": "27",
+        "description": {
+          "en-GB": "Mini market"
+        }
+      },
+      {
+        "code": "11",
+        "description": {
+          "en-GB": "Playground"
+        }
+      },
+      {
+        "code": "6",
+        "description": {
+          "en-GB": "Swimming pool"
+        }
+      },
+      {
+        "code": "31",
+        "description": {
+          "en-GB": "Wading pool"
+        }
+      },
+      {
+        "code": "5",
+        "description": {
+          "en-GB": "24-hours security"
+        }
+      }
+    ],
+    "isSA": false,
+    "attributes": {
+      "bedroom": "4",
+      "bathroom": "4",
+      "builtUp": "1,329",
+      "carPark": "2",
+      "furnishing": "Partly Furnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "occupancy": "Tenanted",
+      "titleType": "Strata",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=FpVKqlJCY441",
+      "buildingId": 1976
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/b3bf7b51245f484a95001b3f63d61204.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/b3bf7b51245f484a95001b3f63d61204.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/b3bf7b51245f484a95001b3f63d61204.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Apartment",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "1665",
+        "type": "agency",
+        "name": "Meridin Properties",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60362010116",
+              "label": "phone"
+            },
+            {
+              "number": " 60362010886",
+              "label": "fax"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Melaka",
+        "level2": "Bukit Baru",
+        "level3": "Ixora Apartment "
+      },
+      "ms-MY": {
+        "level1": "Melaka",
+        "level2": "Bukit Baru",
+        "level3": "Ixora Apartment "
+      }
+    },
+    "id": "sale-7780026",
+    "listers": [
+      {
+        "id": "37328",
+        "type": "agent",
+        "name": "Raymond Lim",
+        "license": "REN 36742",
+        "website": "https://www.iproperty.com.my/property-agent/raymond-lim-37328",
+        "description": "Team Manager @ MERIDIN PROPERTIES SDN BHD\n\nDEALING IN ALL TYPES OF PROPERTY\n--RESIDENTIAL / COMMERCIAL / INDIUSTRIAL/ LAND\nSpecialist in MELAKA area\nDealing in MELAKA + N.SEMBILAN + JOHOR LANDS",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60166963355",
+              "label": "mobile"
+            },
+            {
+              "number": "+60166963355",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/bukit-baru/ixora-apartment/sale-7780026/",
+    "tier": 1,
+    "address": {
+      "formattedAddress": "Jalan Bukit Beruang, Bukit Baru, 75450, Melaka",
+      "lat": 2.2521,
+      "lng": 102.276921,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/b3bf7b51245f484a95001b3f63d61204.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/b3bf7b51245f484a95001b3f63d61204.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/b3bf7b51245f484a95001b3f63d61204.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/9f30d359ac324d0a946021221724338d.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/9f30d359ac324d0a946021221724338d.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/9f30d359ac324d0a946021221724338d.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/1c8dd7396d214e7d8457b0252c5e117d.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/1c8dd7396d214e7d8457b0252c5e117d.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/1c8dd7396d214e7d8457b0252c5e117d.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/5d7b2e9ac78e46389145689d408229a6.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/5d7b2e9ac78e46389145689d408229a6.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/5d7b2e9ac78e46389145689d408229a6.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/2b99cea305424dd5856add74e2b70b76.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/2b99cea305424dd5856add74e2b70b76.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/2b99cea305424dd5856add74e2b70b76.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/f1686009072c436381c3c68bae2766a7.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/f1686009072c436381c3c68bae2766a7.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/f1686009072c436381c3c68bae2766a7.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/a3a0b8a7571a4ea6a6c1ab269be5cd88.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/a3a0b8a7571a4ea6a6c1ab269be5cd88.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/a3a0b8a7571a4ea6a6c1ab269be5cd88.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/a0c98594f31e4987928499be0640fb25.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/a0c98594f31e4987928499be0640fb25.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/a0c98594f31e4987928499be0640fb25.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/f8ab90f4e91b445581cb719ce070207b.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/f8ab90f4e91b445581cb719ce070207b.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/f8ab90f4e91b445581cb719ce070207b.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/bb806c426f6842efb3089202c8ed8bd0.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/bb806c426f6842efb3089202c8ed8bd0.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/bb806c426f6842efb3089202c8ed8bd0.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/3e7b627da33e4030b5506e8b6a72d842.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/3e7b627da33e4030b5506e8b6a72d842.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/3e7b627da33e4030b5506e8b6a72d842.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/5508c455765b48abb0e3339033dd34da.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/5508c455765b48abb0e3339033dd34da.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/5508c455765b48abb0e3339033dd34da.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/94281def4cda4bbdb5e5a9a5e0b21389.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/94281def4cda4bbdb5e5a9a5e0b21389.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/94281def4cda4bbdb5e5a9a5e0b21389.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/cc9a39b102064035b87418ccd9114a84.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/cc9a39b102064035b87418ccd9114a84.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/cc9a39b102064035b87418ccd9114a84.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/37328/b4bda894c0614135aefc0d3c353f9953.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/37328/b4bda894c0614135aefc0d3c353f9953.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/37328/b4bda894c0614135aefc0d3c353f9953.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP7780026",
+    "updatedAt": "2020-05-20T16:19:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 310000,
+        "max": 310000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Melaka General Hospital",
+        "Pantai Hospital"
+      ],
+      "education.school": [
+        "SJK (C) Chabau",
+        "SMK Bukit Katil",
+        "SMS Muzaffar Syah",
+        "SMK St. David",
+        "SK Jalan Datuk Palembang"
+      ],
+      "public_transport": [
+        "Inter-State Bus",
+        "Melaka Sentral (local bus)",
+        "Hentian Bandar Raya",
+        "Opp Kompleks Mahkamah Melaka",
+        "Opp Pantai Hospital Melaka"
+      ],
+      "leisure.park": [
+        "Hutan Rekreasi Ayer Keroh",
+        "Taman Rimba",
+        "Sentosa Temple Park",
+        "Hutan Simpan Kekal Bukit Beruang",
+        "Taman Seribu Bunga"
+      ],
+      "commercial.shopping_mall": [
+        "AEON Mall Ayer Keroh",
+        "Melaka Mall"
+      ]
+    },
+    "postedAt": "2020-05-20T16:19:00Z",
+    "channels": {},
+    "description": "MELAKA BUKIT BERUANG @ MMU\r\nIXORA APARTMENT \r\n@ BLOCK D with 4 bedrooms + 4 bathrooms ((( Extra Large Unit !! )))\r\n\r\nFREEHOLD PROPERTY--Strata titled issued\r\n**MARKET MONTHLY RENTAL INCOME @ RM 2000 per month !!!!\r\nGOOD INVESTMENT ---GRR 7.50 p.a.\r\n\r\nSale with Ready Furnished\r\n\r\nFOR SALE @ RM 310,000\r\n** BELOW Bank Valuation\r\n\r\nContacts @ 012-639 0255 ...or... 016-696 3355\r\nWhatsApp Enquiry...CLICK @ wasap.my/60166963355",
+    "title": "Ixora Apartment , Bukit Baru"
+  },
+  {
+    "buildingFacilities": [
+      {
+        "code": "21",
+        "description": {
+          "en-GB": "BBQ"
+        }
+      },
+      {
+        "code": "1",
+        "description": {
+          "en-GB": "Club house"
+        }
+      },
+      {
+        "code": "22",
+        "description": {
+          "en-GB": "Parking"
+        }
+      },
+      {
+        "code": "26",
+        "description": {
+          "en-GB": "Gymnasium"
+        }
+      },
+      {
+        "code": "19",
+        "description": {
+          "en-GB": "Jacuzzi"
+        }
+      },
+      {
+        "code": "23",
+        "description": {
+          "en-GB": "Jogging track"
+        }
+      },
+      {
+        "code": "11",
+        "description": {
+          "en-GB": "Playground"
+        }
+      },
+      {
+        "code": "30",
+        "description": {
+          "en-GB": "Sauna"
+        }
+      },
+      {
+        "code": "24",
+        "description": {
+          "en-GB": "Squash court"
+        }
+      },
+      {
+        "code": "6",
+        "description": {
+          "en-GB": "Swimming pool"
+        }
+      },
+      {
+        "code": "31",
+        "description": {
+          "en-GB": "Wading pool"
+        }
+      },
+      {
+        "code": "10",
+        "description": {
+          "en-GB": "Tennis court"
+        }
+      },
+      {
+        "code": "5",
+        "description": {
+          "en-GB": "24-hours security"
+        }
+      }
+    ],
+    "isSA": false,
+    "attributes": {
+      "bedroom": "3+2",
+      "bathroom": "5",
+      "builtUp": "1,862",
+      "carPark": "3",
+      "furnishing": "Fully Furnished",
+      "maintenanceFee": "0.4",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "pricePSF": "886.14",
+      "minimumPricePerSizeUnit": "886.14",
+      "maximumPricePerSizeUnit": "886.14",
+      "facingDirection": "SouthEast",
+      "unitType": "Intermediate",
+      "occupancy": "Vacant",
+      "titleType": "Strata",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=kAjIq2PTmn01",
+      "buildingId": 2276
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/28793/a6e82470b9914ed482c096db9f780636.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/28793/a6e82470b9914ed482c096db9f780636.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/28793/a6e82470b9914ed482c096db9f780636.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Condominium",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "1078",
+        "type": "agency",
+        "name": "RICH HILL REALTY",
+        "contact": {
+          "phones": [
+            {
+              "number": "+6042266255",
+              "label": "phone"
+            },
+            {
+              "number": "04-226 6255",
+              "label": "fax"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Penang",
+        "level2": "Gelugor",
+        "level3": "The Light Collection III"
+      },
+      "ms-MY": {
+        "level1": "Penang",
+        "level2": "Gelugor",
+        "level3": "The Light Collection III"
+      }
+    },
+    "id": "sale-8902780",
+    "listers": [
+      {
+        "id": "28793",
+        "type": "agent",
+        "name": "Even Goh",
+        "license": "REN 21578",
+        "website": "https://www.iproperty.com.my/property-agent/even-goh-28793",
+        "description": "I am a professional Real Estate Negotiator. I will provide you the best service for buying / selling / leasing.",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60164286246",
+              "label": "mobile"
+            },
+            {
+              "number": "+60164286246",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/gelugor/the-light-collection-iii/sale-8902780/",
+    "tier": 1,
+    "address": {
+      "formattedAddress": "Jalan Pantai Sinaran, Gelugor, 11700, Penang",
+      "lat": 5.368467,
+      "lng": 100.315242,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/28793/a6e82470b9914ed482c096db9f780636.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/28793/a6e82470b9914ed482c096db9f780636.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/28793/a6e82470b9914ed482c096db9f780636.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/28793/b662c77cedce47fda9ea5d869fa6df86.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/28793/b662c77cedce47fda9ea5d869fa6df86.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/28793/b662c77cedce47fda9ea5d869fa6df86.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/28793/141353e9b997427392f519a4da6c1f55.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/28793/141353e9b997427392f519a4da6c1f55.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/28793/141353e9b997427392f519a4da6c1f55.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/28793/acabc293b5c543bbab79a94bb2f7e29a.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/28793/acabc293b5c543bbab79a94bb2f7e29a.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/28793/acabc293b5c543bbab79a94bb2f7e29a.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/28793/a53df8fd2c30432e862b940cff8ef698.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/28793/a53df8fd2c30432e862b940cff8ef698.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/28793/a53df8fd2c30432e862b940cff8ef698.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/28793/9236b671b77b4d7ba4125d9bce730efc.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/28793/9236b671b77b4d7ba4125d9bce730efc.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/28793/9236b671b77b4d7ba4125d9bce730efc.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP8902780",
+    "updatedAt": "2020-06-05T08:00:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 1650000,
+        "max": 1650000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Hospital Lam Wah Ee",
+        "Georgetown Specialist Hospital",
+        "Optimax Eye Specialist Hospital",
+        "Klinik Pergigian L"
+      ],
+      "education.school": [
+        "Chung Ling (Private) High School",
+        "Chung Ling High School",
+        "Han Chiang High School",
+        "Penang Free School",
+        "SJK (C) Han Chiang 韩江华文小学"
+      ],
+      "public_transport": [
+        "Pasar Kampung Baru",
+        "Lintang Angsana",
+        "Dewan Budaya",
+        "Kompleks Eureka",
+        "Desasiswa Fajar Harapan"
+      ],
+      "leisure.park": [
+        "Raffel Park",
+        "Japanese Garden",
+        "Tanah Lapang Lorong Delima 9",
+        "Taman Kejiranan Karpal Singh Lorong Delima 11",
+        "Tanah Lapang Taman Sri Nibong"
+      ],
+      "commercial.shopping_mall": [
+        "Queensbay Mall",
+        "Penang Times Square",
+        "Kompleks Bukit Jambul",
+        "Udini Square",
+        "Sunshine Mall"
+      ]
+    },
+    "postedAt": "2020-06-05T08:00:00Z",
+    "channels": {},
+    "description": "- 3 + 2 Bedrooms\r\n\r\n- 5 Bathrooms\r\n\r\n- Built-up : 1,862 sq.ft.\r\n\r\n- Full furnish\r\n\r\n- Partial renovate\r\n\r\n- Built-in kitchen cabinet\r\n\r\n- Facing coral and pool view\r\n\r\n- Comes with three (3) car parks\r\n\r\n- Move in condition\r\n\r\n\r\nPlease feel free to contact me for more information\r\n\r\nOwners are welcome to list\r\n\r\n\r\nEven Goh 016-4286246",
+    "title": "The Light Collection III, Gelugor"
+  },
+  {
+    "buildingFacilities": [
+      {
+        "code": "21",
+        "description": {
+          "en-GB": "BBQ"
+        }
+      },
+      {
+        "code": "22",
+        "description": {
+          "en-GB": "Parking"
+        }
+      },
+      {
+        "code": "26",
+        "description": {
+          "en-GB": "Gymnasium"
+        }
+      },
+      {
+        "code": "11",
+        "description": {
+          "en-GB": "Playground"
+        }
+      },
+      {
+        "code": "30",
+        "description": {
+          "en-GB": "Sauna"
+        }
+      },
+      {
+        "code": "24",
+        "description": {
+          "en-GB": "Squash court"
+        }
+      },
+      {
+        "code": "6",
+        "description": {
+          "en-GB": "Swimming pool"
+        }
+      },
+      {
+        "code": "10",
+        "description": {
+          "en-GB": "Tennis court"
+        }
+      },
+      {
+        "code": "5",
+        "description": {
+          "en-GB": "24-hours security"
+        }
+      }
+    ],
+    "isSA": false,
+    "attributes": {
+      "bedroom": "3+1",
+      "bathroom": "3",
+      "builtUp": "1,647",
+      "carPark": "2",
+      "furnishing": "Fully Furnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "facingDirection": "Unknown",
+      "unitType": "Corner",
+      "occupancy": "Vacant",
+      "titleType": "Unknown",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=twxR9d6PHX01",
+      "buildingId": 860
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e1b3a7e37c3541a78b80cff7741446be.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/e1b3a7e37c3541a78b80cff7741446be.jpg",
+      "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e1b3a7e37c3541a78b80cff7741446be.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "Condominium",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "1801",
+        "type": "agency",
+        "name": "Advertiser",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60364265166",
+              "label": "phone"
+            }
+          ]
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Putrajaya",
+        "level2": "Putrajaya",
+        "level3": "Puteri Palma Condominium"
+      },
+      "ms-MY": {
+        "level1": "Putrajaya",
+        "level2": "Putrajaya",
+        "level3": "Puteri Palma Condominium"
+      }
+    },
+    "id": "sale-7361309",
+    "listers": [
+      {
+        "id": "40728",
+        "type": "agent",
+        "name": "Kelly Kew",
+        "license": "REN 13419",
+        "website": "https://www.iproperty.com.my/property-agent/kelly-kew-40728",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60163478000",
+              "label": "mobile"
+            },
+            {
+              "number": "+60163478000",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/putrajaya/puteri-palma-condominium/sale-7361309/",
+    "tier": 1,
+    "address": {
+      "formattedAddress": "SKVE, IOI Resort,, Putrajaya, 62502, Putrajaya",
+      "lat": 2.973693,
+      "lng": 101.70782,
+      "hasLatLng": true,
+      "hideMarker": false
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e1b3a7e37c3541a78b80cff7741446be.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/e1b3a7e37c3541a78b80cff7741446be.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e1b3a7e37c3541a78b80cff7741446be.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e756893540d64fc69ac533195c2b4e3b.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/e756893540d64fc69ac533195c2b4e3b.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e756893540d64fc69ac533195c2b4e3b.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/a76ff4f8d28340ffa3e9753c91c6b093.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/a76ff4f8d28340ffa3e9753c91c6b093.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/a76ff4f8d28340ffa3e9753c91c6b093.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/58c261126a104ba1962b991b4f44734a.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/58c261126a104ba1962b991b4f44734a.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/58c261126a104ba1962b991b4f44734a.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/dca1bef8ccc54707bf76f7906f9dadb0.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/dca1bef8ccc54707bf76f7906f9dadb0.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/dca1bef8ccc54707bf76f7906f9dadb0.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/8ee752d21b684e1ead2f9679a2d311de.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/8ee752d21b684e1ead2f9679a2d311de.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/8ee752d21b684e1ead2f9679a2d311de.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/364c500153f14cf1914fc3bbd0b870c6.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/364c500153f14cf1914fc3bbd0b870c6.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/364c500153f14cf1914fc3bbd0b870c6.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/1491e5a0eea3490f935d958c04b7ab9f.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/1491e5a0eea3490f935d958c04b7ab9f.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/1491e5a0eea3490f935d958c04b7ab9f.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/079c9170f17f47e8871818e4c35c9c60.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/079c9170f17f47e8871818e4c35c9c60.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/079c9170f17f47e8871818e4c35c9c60.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e2f6e1b0f0834024b5dc1882a465cabe.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/e2f6e1b0f0834024b5dc1882a465cabe.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/e2f6e1b0f0834024b5dc1882a465cabe.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/ea397a95bf63463886aebcaedbb5c9ae.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/ea397a95bf63463886aebcaedbb5c9ae.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/ea397a95bf63463886aebcaedbb5c9ae.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/ccf24ef1de404e199f9ce776135b1e66.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/ccf24ef1de404e199f9ce776135b1e66.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/ccf24ef1de404e199f9ce776135b1e66.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/68659dbf93ff4456aa93bc734744f26f.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/68659dbf93ff4456aa93bc734744f26f.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/68659dbf93ff4456aa93bc734744f26f.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/774fea4447cd4ca69eed516b56be1363.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/774fea4447cd4ca69eed516b56be1363.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/774fea4447cd4ca69eed516b56be1363.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/7f480c11f25040b08f27e93a2a1b7f3e.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/7f480c11f25040b08f27e93a2a1b7f3e.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/7f480c11f25040b08f27e93a2a1b7f3e.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pictures-my.ippstatic.com/realtors/images/640/40728/8ec44bdbcc8f4f71aff97a495fd60668.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-subsale/premium/${width}x${height}-${scale}/realtors/images/640/40728/8ec44bdbcc8f4f71aff97a495fd60668.jpg",
+        "thumbnailUrl": "https://pictures-my.ippstatic.com/realtors/images/640/40728/8ec44bdbcc8f4f71aff97a495fd60668.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "UP7361309",
+    "updatedAt": "2020-04-06T13:28:00Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 720000,
+        "max": 720000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [
+        "Hospital Sultan Idris Shah Serdang",
+        "Hospital Sultan Abdul Aziz Shah",
+        "Pusat Kesihitan Universiti",
+        "Kids Clinic",
+        "Andorra Women and Children Hospital"
+      ],
+      "education.school": [
+        "Halaqah Intelek Tuition Centre",
+        "Sekolah Menengah Kebangsaan Seri Serdang",
+        "Nexus International School",
+        "SK Dato' Abu Bakar Baginda",
+        "Sekolah Menengah Kebangsaan Desa Serdang"
+      ],
+      "public_transport": [
+        "PY34 UPM",
+        "PY36 Taman Equine",
+        "Koperasi UPM",
+        "Kompleks B / Laman Perdana (Timur)",
+        "Kompleks Akademik A"
+      ],
+      "leisure.park": [
+        "Taman Ekspo Pertanian Malaysia",
+        "Dataran Putra",
+        "Taman Wetland Putrajaya",
+        "Taman Botani Putrajaya",
+        "Taman Warisan Pertanian"
+      ],
+      "commercial.shopping_mall": [
+        "IOI City Mall",
+        "AEON Taman Equine",
+        "IOI City Mall Phase 1",
+        "Alamanda"
+      ]
+    },
+    "postedAt": "2020-04-06T13:28:00Z",
+    "channels": {},
+    "description": "*** Kelly Kew 016 347 8000***\r\n\r\n\r\nPuteri Palma Condo,IOI Resort City For Sale\r\n\r\n-Freehold \r\n-low density\r\n-Corner Unit\r\n-1647sf\r\n-3+1R 3B\r\n-Fully Furnished\r\n-3 air-cond\r\n-kitchen cabinet and cooking stove & hood\r\n-new condition with beautiful view\r\n\r\n\r\nAccesibility: Nearby Nexus International School,The International Mordern Arabic School,\r\nRafflesia International School,IOI City Mall\r\n\r\n\r\nAsking Price:720k(ngeo)\r\n\r\n\r\nKindly contact/ Whatsapp to Kelly Kew 016-3478000",
+    "title": "Puteri Palma Condominium, Putrajaya"
+  },
+  {
+    "isSA": false,
+    "attributes": {
+      "bedroom": "4+1",
+      "bathroom": "4",
+      "landArea": "1,824",
+      "builtUp": "2,765",
+      "carPark": "4",
+      "furnishing": "Unfurnished",
+      "landTitleType": "Residential",
+      "tenure": "Freehold",
+      "pricePerSizeUnitLandArea": "367.32",
+      "pricePerSizeUnitBuiltUp": "242.31",
+      "minimumPricePerSizeUnit": "242.31",
+      "maximumPricePerSizeUnit": "242.31",
+      "facingDirection": "North",
+      "unitType": "Intermediate",
+      "occupancy": "Vacant",
+      "titleType": "Individual",
+      "sizeUnit": "SQUARE_FEET",
+      "sizeUnitLandArea": "SQUARE_FEET",
+      "downloadUrl": "http://generator.iproperty.com.my/property/generate_pdf.aspx?pid=ssXLHlTUT0xKwDtz_AsL/w2"
+    },
+    "cover": {
+      "type": "image",
+      "url": "https://img.rea-asia.com/my-iproperty-original/28467_ce4bd8ce9fa048089c3975983c1acb9d.jpg",
+      "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_ce4bd8ce9fa048089c3975983c1acb9d.jpg",
+      "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_ce4bd8ce9fa048089c3975983c1acb9d.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "propertyType": "2-sty Terrace/Link House",
+    "channel": "sale",
+    "active": true,
+    "organisations": [
+      {
+        "id": "51222",
+        "type": "agency",
+        "name": "Dutama Properties",
+        "logo": {
+          "type": "image",
+          "url": "https://img.rea-asia.com/my-iproperty-original/aufj26ad120c-3c2b-4bf7-bfe8-c85725b9c170_240x105.jpeg",
+          "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/aufj26ad120c-3c2b-4bf7-bfe8-c85725b9c170_240x105.jpeg",
+          "mimeType": "image/jpeg"
+        },
+        "color": "#06377b",
+        "contact": {
+          "phones": [
+            {
+              "number": "+60390553698",
+              "label": "phone"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "kind": "property",
+    "isPremiumPlus": false,
+    "multilanguagePlace": {
+      "en-GB": {
+        "level1": "Selangor",
+        "level2": "Semenyih"
+      },
+      "ms-MY": {
+        "level1": "Selangor",
+        "level2": "Semenyih"
+      }
+    },
+    "id": "sale-100281148",
+    "listers": [
+      {
+        "id": "827868",
+        "type": "agent",
+        "name": "Ken Lee",
+        "license": "REN 18483",
+        "website": "https://www.iproperty.com.my/property-agent/ken-lee-28467",
+        "description": "I am Kenlee, a dedicated and professional Real Estate Negotiator from Dutama Properties with a minimum of 5 years experience in the real estate industry. .Why I engage real estate agents / negotiator.My friend asked me how am I going to sell my properties in Kuala Lumpur ,Malayisa . Would I be using any free online advertisements? I told him that I am using the services of a real estate agent. He remarked that if I do that, I would need to pay agent’s fee. I replied gladly, yes if they sell for me, I would pay agent fee. In my personal opinion, to sell your property properly, you should use an agent. While Malaysia has yet to enforce licensed real estate agents strictly, I would give to agents because of three reasons.Convenience. Assuming you priced your property correctly, how many views do you think it will need for you to sell? Conservatively, five. If you are working, who would open the door if buyers want to view? You limit the viewing to weekends? You worked so hard on weekdays and you still want to ‘work’ on weekdays? If you still answer yes, you may stop reading now. All the best in selling your property&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;#160;Your time is money. If you take a half-day leave, how much would that cost you? If you bring the buyers to view during weekends, that should be double as it is considered rest day. If you have a family that you asked them to wait while you bring the buyer to view, that’s a pity. Why waste the time that you could have used for more productive reasons, for your family, going back to hometown etc?&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;#160;Lastly, safety. If a buyer called to view and he said he wanted to view in the evening, say 8pm, do you feel safe to open the door yourself? You want to bring a friend? Great. What if the buyer is viewing with a few other people and there are just two of you? Be real, even agents take precautionary measures these days, why not you?&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;#160;I do not want to go into how much savings you can save versus what if things really do go wrong. To me, every profession has its reasons. You can buy a scissor and cut your hair too. Why pay so much to cut your hair? Think objectively, make decision swiftly. When you sell, you are look",
+        "image": {
+          "type": "image",
+          "url": "https://img.rea-asia.com/my-iproperty-original/8sow7374eb3f-025c-4490-80e7-0b76189c841d_240x302.jpeg",
+          "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/8sow7374eb3f-025c-4490-80e7-0b76189c841d_240x302.jpeg",
+          "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/8sow7374eb3f-025c-4490-80e7-0b76189c841d_240x302.jpeg",
+          "mimeType": "image/jpeg"
+        },
+        "contact": {
+          "phones": [
+            {
+              "number": "+60124086196",
+              "label": "phone"
+            },
+            {
+              "number": "60124086196",
+              "label": "whatsapp"
+            }
+          ],
+          "emails": {}
+        }
+      }
+    ],
+    "isPrimary": false,
+    "shareLink": "https://www.iproperty.com.my/property/semenyih/sale-100281148/",
+    "tier": 3,
+    "address": {
+      "formattedAddress": "Setia ecohill, Eco majestic 24 x 76, 43500, Selangor",
+      "hasLatLng": {
+        "BOOL": true
+      },
+      "hideMarker": false,
+      "lat": {
+        "N": "2.913861"
+      },
+      "lng": {
+        "N": "101.839687"
+      }
+    },
+    "logo": {},
+    "medias": [
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_ce4bd8ce9fa048089c3975983c1acb9d.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_ce4bd8ce9fa048089c3975983c1acb9d.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_ce4bd8ce9fa048089c3975983c1acb9d.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_ebfc341ae3254742be1bbeacf40e22ce.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_ebfc341ae3254742be1bbeacf40e22ce.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_ebfc341ae3254742be1bbeacf40e22ce.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_9235dd08e4f4482eb264555b34e7e896.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_9235dd08e4f4482eb264555b34e7e896.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_9235dd08e4f4482eb264555b34e7e896.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_49eeffe5f54c457db5be2db204faece7.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_49eeffe5f54c457db5be2db204faece7.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_49eeffe5f54c457db5be2db204faece7.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_e48bf3b9f6714907bd3325c9be06f8d9.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_e48bf3b9f6714907bd3325c9be06f8d9.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_e48bf3b9f6714907bd3325c9be06f8d9.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_7f8e8762bb044c35883384e267c24084.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_7f8e8762bb044c35883384e267c24084.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_7f8e8762bb044c35883384e267c24084.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_3b3209ab8bda42fb9ac7486c500e2e34.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_3b3209ab8bda42fb9ac7486c500e2e34.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_3b3209ab8bda42fb9ac7486c500e2e34.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_51514884b427458790736797b7e6ac0c.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_51514884b427458790736797b7e6ac0c.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_51514884b427458790736797b7e6ac0c.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_a6017bceb5fb4ec49749a44141f5b51c.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_a6017bceb5fb4ec49749a44141f5b51c.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_a6017bceb5fb4ec49749a44141f5b51c.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_5e73933c46384739bc5a4d1a76c39c9b.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_5e73933c46384739bc5a4d1a76c39c9b.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_5e73933c46384739bc5a4d1a76c39c9b.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_f9c568ccbec64e6c98735315ff2219d8.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_f9c568ccbec64e6c98735315ff2219d8.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_f9c568ccbec64e6c98735315ff2219d8.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_e5672ce27efb4a95a485ca4fc8cb29be.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_e5672ce27efb4a95a485ca4fc8cb29be.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_e5672ce27efb4a95a485ca4fc8cb29be.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_e983190d6559401d9894c2dc013ee465.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_e983190d6559401d9894c2dc013ee465.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_e983190d6559401d9894c2dc013ee465.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_3deb71b90c7c4ed581c0ffe3e19b6eb2.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_3deb71b90c7c4ed581c0ffe3e19b6eb2.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_3deb71b90c7c4ed581c0ffe3e19b6eb2.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://img.rea-asia.com/my-iproperty-original/28467_a119642f9d6e41769038987b7cc36dd1.jpg",
+        "urlTemplate": "https://img.rea-asia.com/my-iproperty/premium/${width}x${height}-${scale}/28467_a119642f9d6e41769038987b7cc36dd1.jpg",
+        "thumbnailUrl": "https://img.rea-asia.com/my-iproperty-original/28467_a119642f9d6e41769038987b7cc36dd1.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "referenceCode": "100281148",
+    "updatedAt": "2020-06-02T02:54:18Z",
+    "prices": [
+      {
+        "type": "sale",
+        "currency": "MYR",
+        "min": 670000,
+        "max": 670000
+      }
+    ],
+    "nearby_pois": {
+      "healthcare.hospital": [],
+      "education.school": [
+        "SK Bandar Tasik Kesuma",
+        "SMK Bandar Tasik Kesuma",
+        "SJK (T) Ladang Rinching",
+        "SJK (T) Ladang Semenyih",
+        "Sekolah Jenis Kebangsaan (Cina) Kampung Baru Semenyih"
+      ],
+      "public_transport": [
+        "Petron Semenyih",
+        "Lotus Semenyih (Opp)",
+        "Ascotte Boulevard",
+        "Lotus Semenyih",
+        "Kolej Tinggi MARA Japan (Opp)"
+      ],
+      "leisure.park": [
+        "Setia EcoHill 2 Adventure Park",
+        "UNM Arboretum",
+        "Semenyih Lake Country Club",
+        "Setia Ecohill Park",
+        "The Garden @ Taman Semenyih Mewah Fasa 4"
+      ],
+      "commercial.shopping_mall": [
+        "EcoHill Walk"
+      ]
+    },
+    "postedAt": "2020-06-02T02:54:18Z",
+    "channels": {},
+    "description": "2sty superlink house\r\nland size: 23.5x 86\r\nbuilt up: 2765sqft\r\nGated and guarded community\r\nequipped with AgilFence PIDS, the most intelligent fencing in the world. \r\n\r\nFacilities:\r\n- Adventure park\r\n- Landscaped Park \r\n- Jogging Track \r\n- Children Playground\r\n- Gated & Guarded \r\n- 24 hours CCTV surveillance and patrolling guards \r\n- Card access system\r\n\r\nAmenities:\r\n- Tesco semenyih\r\n- Fast food: KFC, McDonald, Pizza Hut\r\n- Education: Primary & Secondary Schools, Nottingham University\r\n- Shell/Petronas Station\r\n- Shoplots\r\n\r\nEasy Access: \r\n- Town Semenyih,Semenyih Sentral,Econsave,Mydin,The Store,Pasar Pagi,Sek.Keb Semenyih and Sek.Ren.Agama (5 mins)\r\n- TESCO Semenyih and Nottingham University (10 mins)\r\n- Easy access via SILK Highway,LEKAS Highway,Kajang-Seremban Highway\r\n\r\nYour Life, Enriched – Welcome Home To Exclusivity\r\n\r\nImagine upgrading to a spacious, exclusive superlink home in Horizon Residences with large open spaces. Allow the idyllic scenery to graciously welcome you home after a long day’s work, knowing that your loved ones are protected with AgilFence PIDS world-class security systems.\r\n\r\n \r\n\r\nSunbird Walk – A Walk to Remember\r\n\r\nSpend your evenings strolling along the manicured gardens of the Sunbird Walk that cuts through the streets and rows of houses in Horizon Residences. Strike up conversations with your fellow neighbours. At Horizon Residences, the linear gardens are designed to bring people closer together to nature and to each other.\r\n\r\n \r\n\r\nAward-Winning Landscapes with an Asian Touch\r\n\r\nInspired by East-Asian influences, the Oriental Garden is adorned with hand-picked flora and art sculptures. Seize the perfect opportunity for a walk in the park with your family and immerse in the serenity & tranquility of this award-winning landscape.\r\n\r\n \r\n\r\nA Community Clubhouse that offers Everything Under The Sun\r\n\r\nBoasting breathtaking panoramic views, Club 360º offers a myriad of amenities including an Olympic-length swimming pool, a gymnasium as well as an indoor sports centre. You are sure to be spoilt for choice in the abundance of activities made exclusively available to you at the private clubhouse.",
+    "title": "Setia ecohill, Eco majestic 24 x 76, Semenyih"
+  }
+]

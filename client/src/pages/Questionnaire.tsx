@@ -350,7 +350,9 @@ function Questionnaire() {
     if (mainStep < questions.length - 1) {
       setMainStep(m => m + 1);
       setFadeKey(k => k + 1);
+      setnewLocation(newLocation);
     }
+  }
   }
 
   function handleBack() {
@@ -446,7 +448,7 @@ function Questionnaire() {
         </div>
       </div>
       {/* Display filtered listings using SwipeCards */}
-      {filteredListings.length > 0 && (
+      {/* {filteredListings.length > 0 && (
         <div className="w-full p-4">
           <h2 className="text-xl font-bold mb-4">Recommended Properties</h2>
           <SwipeCards
@@ -461,7 +463,7 @@ function Questionnaire() {
             onCardClick={(newLocation) => console.log('Navigate to:', newLocation)}
           />
         </div>
-      )}
+      )} */}
     </div>
   )
 }

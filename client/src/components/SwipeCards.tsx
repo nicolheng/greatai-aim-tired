@@ -5,22 +5,30 @@ import { HiChevronUp, HiChevronDown } from 'react-icons/hi2';
 import { HiArrowPath } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 
+import data from '../properties_export_plain.json';
 type Listing = {
   id: number;
-  title: string;
-  image: string;
-  image2?: string;
-  image3?: string;
-  price: string;
-  location: string;
-  tags?: string[];
-  isNew?: boolean;
+  address: {
+    formattedAddress: string;
+    lat: number;
+    lng: number;
+    hasLatLng: boolean;
+    hideMarker: boolean;
+  };
+  attributes: string[];
+  medias: {
+    images: { url: string }[];
+    cover?: { type: string; url: string };
+  };
   description?: string;
-  coords: [number, number];
+  // Assuming prices.min might be derived or added later
+  prices?: { min?: string };
+  title?: string; // Derived from description or uriTemplate
+  uriTemplate?: string;
 };
 
 interface SwipeCardProps{
-  listings: Listing[],
+  // listings: Listing[],
   onCardClick: (newLocation: [number, number]) => void;
   onMinimizedChange?: (minimized: boolean) => void; // add
 }
@@ -98,17 +106,26 @@ const addFavorite = async (id: number): Promise<void> => {
   }
 };
 
-function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
-  const [cards, setCards] = useState(listings)
-  const [drag, setDrag] = useState({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 })
-  const [animating, setAnimating] = useState(false)
-  const [showNext, setShowNext] = useState(false)
-  const [swipeResult, setSwipeResult] = useState<null | 'left' | 'right'>(null)
+function SwipeCards({onCardClick, onMinimizedChange}: SwipeCardProps) {
+  const [cards, setCards] = useState<Listing[]>([]);
+  const [drag, setDrag] = useState({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 });
+  const [animating, setAnimating] = useState(false);
+  const [showNext, setShowNext] = useState(false);
+  const [swipeResult, setSwipeResult] = useState<null | 'left' | 'right'>(null);
   const [outDirection, setOutDirection] = useState<'left' | 'right' | null>(null)
   const [isMinimized, setIsMinimized] = useState(false)
   const cardRef = useRef<HTMLDivElement | null>(null)
 
   const MAX_ANGLE = 30
+
+  useEffect(() => {{
+    if (Array.isArray(data) && data.length > 0) {
+      setCards(data);
+      console.log('JSON data loaded:', data); // Log to console
+    } else {
+      console.error('Invalid or empty JSON data:', data);
+    }    
+  }}, []);
 
   // Drag handlers for the image
   const handleImgDragStart = (e: React.MouseEvent | React.TouchEvent) => {
@@ -246,7 +263,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 pointerEvents: 'none',
               }}
             >
-              <img src={nextCard.image} alt={nextCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
+              <img src={nextCard.medias.images[0]?.url} alt={nextCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
               <div className="mt-4 text-lg font-semibold">{nextCard.title}</div>
             </div>
           )}
@@ -259,7 +276,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 pointerEvents: 'none',
               }}
             >
-              <img src={thirdCard.image} alt={thirdCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
+              <img src={thirdCard.medias.images[0]?.url} alt={thirdCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
               <div className="mt-4 text-lg font-semibold">{thirdCard.title}</div>
             </div>
           )}
@@ -272,7 +289,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 pointerEvents: 'none',
               }}
             >
-              <img src={fourthCard.image} alt={fourthCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
+              <img src={fourthCard.medias.images[0]?.url} alt={fourthCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
               <div className="mt-4 text-lg font-semibold">{fourthCard.title}</div>
             </div>
           )}
@@ -285,7 +302,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 pointerEvents: 'none',
               }}
             >
-              <img src={fifthCard.image} alt={fifthCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
+              <img src={fifthCard.medias.images[0]?.url} alt={fifthCard.title} className="w-[270px] h-[330px] object-cover rounded-xl mt-8" />
               <div className="mt-4 text-lg font-semibold">{fifthCard.title}</div>
             </div>
           )}
@@ -301,7 +318,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 transformOrigin: '50% 100%',
                 zIndex: 2,
               }}
-              onClick={() => onCardClick(topCard.coords)}
+              onClick={() => onCardClick([topCard.address.lat, topCard.address.lng])}
               onMouseDown={handleImgDragStart}
               onMouseMove={drag.isDragging ? handleImgDragMove : undefined}
               onMouseUp={handleImgDragEnd}
@@ -317,7 +334,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 {/* Main cover image: spans 2 cols and 2 rows */}
                 <div className="col-span-2 row-span-2">
                   <img
-                    src={topCard.image}
+                    src={topCard.medias.images[0]?.url}
                     alt={topCard.title}
                     className="object-cover w-full h-full rounded-xl min-h-[180px] max-h-[260px]"
                   />
@@ -325,7 +342,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 {/* Top right image (placeholder or extra image) */}
                 <div className="col-start-3 row-start-1">
                   <img
-                    src={topCard.image2 || topCard.image}
+                    src={topCard.medias.images[1].url || topCard.medias.images[0]?.url}
                     alt={topCard.title + ' extra 1'}
                     className="object-cover w-full h-full rounded-xl min-h-[85px] max-h-[120px]"
                   />
@@ -333,7 +350,7 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
                 {/* Bottom right image (placeholder or extra image) */}
                 <div className="col-start-3 row-start-2">
                   <img
-                    src={topCard.image3 || topCard.image}
+                    src={topCard.medias.images[2].url || topCard.medias.images[0]?.url}
                     alt={topCard.title + ' extra 2'}
                     className="object-cover w-full h-full rounded-xl min-h-[85px] max-h-[120px]"
                   />
@@ -342,14 +359,14 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
               <div className="card-body pt-2">
                 <h2 className="card-title">
                   {topCard.title}
-                  {topCard.isNew && <div className="badge badge-secondary">NEW</div>}
+                  <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p className="text-sm text-gray-500">{topCard.location}</p>
-                <p className="font-bold text-lg">{topCard.price}</p>
+                <p className="text-sm text-gray-500">{topCard.address.formattedAddress}</p>
+                <p className="font-bold text-lg">{topCard.prices.min}</p>
                 {topCard.description && <p className="text-xs mt-1">{topCard.description}</p>}
                 <div className="card-actions justify-end flex-wrap mt-2">
-                  {topCard.tags?.map(tag => (
-                    <div key={tag} className="badge badge-outline">{tag}</div>
+                  {topCard.attributes?.map(attributes => (
+                    <div key={attributes.id} className="badge badge-outline">{attributes}</div>
                   ))}
                 </div>
 
