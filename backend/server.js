@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import questionairesRoutes from "./routes/questionaire.js";
 import testPropertiesRoutes from "./routes/testProperties.js";
+import filterPropertiesRouter from './routes/filterProperties.js';
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.use(express.json());
 
 app.use("/api/questionaire", questionairesRoutes);
 app.use("/api/properties", testPropertiesRoutes);
+app.use('/api/filter-properties', filterPropertiesRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT} with CORS enabled`));
