@@ -10,8 +10,8 @@ import Dock from "../components/Dock";
 
 const listings = [
   {
-    id: 0,
-    title: 'Modern Family Home',
+    id: 1,
+    title: 'Downtown Apartment',
     image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
     price: '$450,000',
     location: 'Suburbia, Springfield',
@@ -21,7 +21,7 @@ const listings = [
     coords: [101.7001903848135,3.055492032127826], 
   },
   {
-    id: 1,
+    id: 2,
     title: 'Downtown Apartment',
     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
     price: '$320,000',
@@ -32,7 +32,7 @@ const listings = [
     coords: [101.71341249524647, 3.14899283474485]
   },
   {
-    id: 2,
+    id: 3,
     title: 'Country Cottage',
     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
     price: '$275,000',
@@ -43,7 +43,7 @@ const listings = [
     coords: [99.85198429240435, 6.308492265209934], 
   },
   {
-    id: 3,
+    id: 4,
     title: 'Country Cottage',
     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
     price: '$275,000',
@@ -54,7 +54,7 @@ const listings = [
     coords: [102.24934548175467, 2.1944992542512964],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Country Cottage',
     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
     price: '$275,000',
@@ -65,7 +65,7 @@ const listings = [
     coords: [116.05129273943278, 5.923560454410471],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Country Cottage',
     image: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
     price: '$275,000',
@@ -175,13 +175,13 @@ const Home = () => {
         font-weight: bold;
         font-family: system-ui;        
       }
-      .introjs-button {
+      .introjs-nextbutton {
         background-color: #4B0082;
         border-radius:.6em;
         color: white;
         text-shadow: none;
       }
-      introjs-button:hover {
+      introjs-nextbutton:hover {
         background-color: #5C6DC9;
         color: white;
         border-color: unset;
@@ -196,7 +196,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex">
+    <div className="relative w-full h-screen flex overflow-hidden">
       <Sidebar />
       <Dock/>
       <button className="btn btn-square border-e border-gray-300 bg-white hover:bg-gray-100 h-10 w-10 fixed top-1 left-2 md:z-5 z-20 md:hover:top-15 md:top-15  transition-all" onClick={startTutorial}>
@@ -206,7 +206,7 @@ const Home = () => {
         <Map newLocation={newLocation} isIdle={isIdle} setZoom={16.00} />
 
         <div
-          className={`absolute top-0 right-0 h-full w-[32rem] max-w-full overflow-y-auto z-10 
+          className={`absolute top-0 right-0 h-full w-[32rem] max-w-full z-10 
           ${cardsMinimized ? 'pointer-events-none p-0' : 'pointer-events-auto p-6'} 
           md:pointer-events-auto md:p-6`}
         >

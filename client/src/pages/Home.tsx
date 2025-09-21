@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar"
 import Dock from "../components/Dock"
 import Footer from "../components/Footer"
 import StepsButtons from "../components/StepsButtons"
-import LandingBG from "../components/LandingBG"
+import DummyVideo from "../assets/DummyLandingDemo.mp4"
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { LuBrain } from "react-icons/lu";
 import { FaTired } from "react-icons/fa";
@@ -35,7 +35,10 @@ function Landing () {
         </div>
 
         {/* Video demo */}
-        <div className="flex w-full h-[40rem] items-center justify-center mt-12 pl-20 pr-20"><p className="w-full h-full bg-gray-300 text-gray-600 rounded-xl">video demo</p></div>
+        <div className="flex w-full h-[40rem] items-center justify-center mt-12 pl-20 pr-20">
+            <video src={DummyVideo} className="w-full h-full object-cover rounded-xl bg-blue-50 shadow-xl"  autoPlay muted loop></video>
+            {/* <p className="w-full h-full bg-gray-300 text-gray-600 rounded-xl">video demo</p> */}
+        </div>
         
         {/* Logo carousel */}
         <div className="flex flex-col w-full items-center justify-center mt-10 mb-10 gap-6">

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { HiHeart } from 'react-icons/hi2';
 import { HiOutlineTrash } from "react-icons/hi";
 import { HiChevronUp, HiChevronDown } from 'react-icons/hi2';
-import { HiArrowPath } from 'react-icons/hi2'; // add
+import { HiArrowPath } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 
 type Listing = {
@@ -66,6 +66,38 @@ interface SwipeCardProps{
 
 // Drag state now includes startX/startY for tracking
 
+// IndexedDB utilities
+const DB_NAME = 'FavoritesDB';
+const DB_VERSION = 1;
+const STORE_NAME = 'favorites';
+
+const openDB = (): Promise<IDBDatabase> => {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open(DB_NAME, DB_VERSION);
+    
+    request.onerror = () => reject(request.error);
+    request.onsuccess = () => resolve(request.result);
+    
+    request.onupgradeneeded = (event) => {
+      const db = (event.target as IDBOpenDBRequest).result;
+      if (!db.objectStoreNames.contains(STORE_NAME)) {
+        db.createObjectStore(STORE_NAME, { keyPath: 'id' });
+      }
+    };
+  });
+};
+
+const addFavorite = async (id: number): Promise<void> => {
+  try {
+    const db = await openDB();
+    const transaction = db.transaction([STORE_NAME], 'readwrite');
+    const store = transaction.objectStore(STORE_NAME);
+    await store.put({ id, timestamp: Date.now() });
+  } catch (error) {
+    console.error('Failed to add favorite:', error);
+  }
+};
+
 function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
   const [cards, setCards] = useState(listings)
   const [drag, setDrag] = useState({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 })
@@ -126,6 +158,12 @@ function SwipeCards({listings,onCardClick, onMinimizedChange}: SwipeCardProps) {
     setOutDirection(direction)
     setAnimating(true)
     setShowNext(true)
+    
+    // Save to favorites if swiped right
+    if (direction === 'right' && topCard) {
+      addFavorite(topCard.id);
+    }
+    
     setTimeout(() => {
       setCards((prev) => prev.slice(1))
       setDrag({ x: 0, y: 0, isDragging: false, startX: 0, startY: 0 })

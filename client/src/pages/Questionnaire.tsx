@@ -244,7 +244,7 @@ function Questionnaire() {
           <div className="flex flex-col sm:flex-row justify-between gap-4 mt-8">
             <button className="btn bg-base-100 w-full sm:w-auto" disabled={isFirst} onClick={handleBack}>Back</button>
             {isLast ? (
-              <button className="btn btn-primary w-full sm:w-auto" onClick={() => {window.location.href = '/tinder';}}>Finish</button>
+              <button className="btn btn-primary w-full sm:w-auto" onClick={() => {window.location.href = '/swipe';}}>Finish</button>
             ) : (
               <button className="btn btn-base-300 w-full sm:w-auto" onClick={handleNext}>Next</button>
 
